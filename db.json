@@ -1,0 +1,131 @@
+{
+    "iraninFoods" : [
+        {
+            "id":1,
+            "title":"کوفته برنجی",
+            "price": "۱۳۶٬۰۰۰  ",
+            "desc": "برنج سبزی کوفته لپه آرد نخودچی، گردو و زرشک و آلو پیاز",
+            "percent":"۳۵%",
+            "discount":"۱۸۰٬۰۰۰",
+            "imageUrl":"/assets/images/menu/1.jpg",
+            "class": "iranian"            
+        },
+        {
+            "id": 2,
+            "title": "کشک بادمجان",
+            "price": "۹۵٬۰۰۰" ,
+            "desc": "بادمجان، کشک، نعناع خشک، مغز گردو، سیر، پیاز",
+            "percent": "",
+            "discount":"",
+            "imageUrl": "/assets/images/menu/2.jpg",
+            "class": "iranian"    
+        },
+        {
+            "id": 3,
+            "title": "میرزا قاسمی ",
+            "price": "۱۴۲٬۵۰۰ " ,
+            "desc":"بادمجان، کشک، نعناع خشک، مغز گردو، سیر، پیاز",
+            "percent":"۱۰%",
+            "discount":"۱۶۵٬۰۰۰",
+            "imageUrl": "/assets/images/menu/3.jpg",
+            "class": "iranian"    
+        },
+        {
+            "id": 4,
+            "title": "باقلاقاتوق",
+            "price": "۱۸۰٬۰۰۰"   ,
+            "desc":"پاچ باقلا، شوید خشک، کره، سیر، تخم مرغ",
+            "percent":"۳۰%",
+            "discount":"۲۰۵٬۰۰۰",
+            "imageUrl": "/assets/images/menu/4.jpg",
+            "class": "iranian"    
+        },
+        {
+            "id": 5,
+            "title": "فلافل",
+            "price": "۸۰٬۰۰۰",
+            "desc":"نخود، پیاز، تخم گشنیز، سیر، جعفری، سیب زمینی",
+            "percent":"",
+            "discount":"",
+            "imageUrl": "/assets/images/menu/5.jpg",
+            "class": "iranian"    
+        },
+        {
+            "id": 6,
+            "title": "کله جوش",
+            "price": "۲۰۳٬۰۰۰" ,
+            "desc":"کشک، گردو، پیاز، نعناع خشک",
+            "percent":"۵%",
+            "discount":"۲۱۰٬۰۰۰",
+            "imageUrl": "/assets/images/menu/6.jpg",
+            "class": "iranian"    
+        },
+        {
+            "id": 7,
+            "title": " بورانی بادمجان",
+            "price": "۱۴۸٬۰۰۰ " ,
+            "desc":"بادمجان قلمی، ماست چکیده، سیر، روغن زیتون، مغز گردو",
+            "percent":"۲۲%",
+            "discount":"۱۷۰٬۰۰۰",
+            "imageUrl": "/assets/images/menu/7.jpg",
+            "class": "iranian"    
+        },
+        {
+            "id": 8,
+            "title": "بادمجان شکم‌پر",
+            "price": "۱۳۶٬۰۰۰  " ,
+            "desc":"بادمجان، پیاز، گوجه فرنگی، سبزی خشک",
+            "percent":"۱۸%",
+            "discount":"۱۵۰٬۰۰۰",
+            "imageUrl": "/assets/images/menu/8.jpg",
+            "class": "iranian"    
+        },
+       
+        {
+            "id": 9,
+            "title": "دلمه برگ کلم",
+            "price": "۲۰۹٬۰۰۰   " ,
+            "desc":"کلم برگ، برنج، لپه پخته، پیاز، سبزی معطر,رب",
+            "percent":"۸%",
+            "discount":"۲۲۰٬۰۰۰",
+            "imageUrl": "/assets/images/menu/9.jpg",
+            "class": "iranian"    
+        },
+        {
+            "id": 10,
+            "title": " دلمه برگ مو",
+            "price": "۱۹۵٬۰۰۰   " ,
+            "desc":"پیاز، برنج، لپه، سبزی دلمه، سرکه ",
+            "percent":"",
+            "discount":"",
+            "imageUrl": "/assets/images/menu/10.jpg",
+            "class": "iranian"    
+        },
+        {
+            "id":11 ,
+            "title": " کوکو سبزی",
+            "price": "۲۷۰٬۰۰۰   " ,
+            "desc":"تخم مرغ، گردو، سیر، آرد، روغن مایع,سبزی کوکویی" ,
+            "percent":"%۱۰",
+            "discount":"۳۰۰٬۰۰۰",
+            "imageUrl": "/assets/images/menu/11.jpg",
+            "class": "iranian"    
+        },
+        {
+            "id":12 ,
+            "title": "کوکو سیب‌زمینی و عدس ",
+            "price": "۱۰۵٬۰۰۰  " ,
+            "desc":"عدس، سیب زمینی، پیاز متوسط، تخم مرغ، پودر سیر، آرد سوخاری",
+            "percent":"%۲۰",
+            "discount":"۱۳۵٬۰۰۰",
+            "imageUrl": "/assets/images/menu/12.jpg",
+            "class": "iranian"    
+        }
+       
+    ]
+
+    
+}
+
+
+
