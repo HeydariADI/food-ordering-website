@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="/public/build/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/public/Estedad-v5.0-Fontjo.com/Estedad[wght,kshd].ttf">
+    <link rel="stylesheet" href="/public/Estedad-v5.0-Fontjo.com/Estedad[wght,kshd].woff2">
+    <!-- <link rel="shortcut icon" href="#"> -->
+   
+    <title>ترخینه</title>
+</head>
+<body class="relative flex flex-col justify-center items-center w-full h-full max-sm:overflow-x-hidden  max-sm:w-90 " >
+    <!-- header -->
+    <header class=" bg-white flex justify-center items-center  shadow-sm  w-full h-32 p-10 max-sm:h-16 max-sm:w-90 max-sm:gap-12 ">
+        <!-- humberger-menu -->
+        <div class="md:hidden">
+            <div class="space-y-2 w-6 h-6">
+                <div class="w-8 h-0.5 bg-Primary"></div>
+                <div class="w-8 h-0.5 bg-Primary"></div>
+                <div class="w-8 h-0.5 bg-Primary"></div>
+            </div>
+        </div>
+        <!-- logo -->
+        <div class="flex w-36 h-12 max-sm:w-24 max-sm:h-8 ">
+            <span>
+                <img src="/assets/icon/logo1.svg" alt="" >
+                
+            </span>
+            <span>
+                <img src="/assets/icon/Logo.svg" alt="">
+            </span>
+        </div>
+        <!-- menu desktop -->
+        <div class="flex justify-center items-center w-9/12 h-40 cursor-pointer font-normal text-xl  max-sm:hidden">
+            <ul class="flex flex-row justify-between items-center gap-6" >
+                <li><a href="./index.html" id="home" class="text-Primary font-bold">صفحه اصلی</a></li>
+                <li id="branch" class="flex flex-col mt-40">
+                    <div class="flex justify-center items-center gap-2">
+                        <a href="./index.html" id="branch" class="hover:text-Primary hover:font-bold">شعبه</a>
+                        <svg id="brancharrow" class="w-4 h-4 mt-2 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <div  id="branchlist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 opacity-0">
+                        <ul class="flex flex-col gap-2 font-normal text-Gray8 text-sm ">
+                            <li><a href="./ekbatan.html" id="ekbatan" >اکباتان </a></li>
+                            <hr class="w-32 text-Gray3">
+                            <li><a id="chaloos">چالوس</a></li> 
+                            <hr class="w-32 text-Gray3">
+                            <li><a id="aghdasieh">اقدسیه</a></li>
+                            <hr class="w-32 text-Gray3">
+                            <li><a id="vanak" >ونک</a></li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li id="" class="flex flex-col mt-40">
+                    <div class="flex justify-center items-center gap-2">
+                        <a id="menu" href="./menu.html" class="hover:text-Primary hover:font-bold">منو</a>
+                        <svg id="menuarrow" class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <div id="menulist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 opacity-0">
+                        <ul class="flex flex-col gap-2 font-normal text-sm ">
+                            <li><a  href="./menu.html" id="main">غذای اصلی</a></li>
+                            <hr class="w-32 text-Gray3">
+                            <li><a id="starter">پیش غذا</a></li>
+                            <hr class="w-32 text-Gray3">
+                            <li><a id="desert">دسر</a></li>
+                            <hr class="w-32 text-Gray3">
+                            <li><a id="drink">نوشیدنی</a></li>
+                            
+                        </ul>
+                    </div>
+                   
+                        
+                </li>
+                <li id="representation">اعطای نمایندگی</li>
+                <li id="about">درباره ما</li>
+                <li id="cotact-us" class="w-28 h-9 mt-2 flex gap-2">
+                    <p>تماس با ما</p>
+                    <svg class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                        
+                </li>
+            </ul>
+        </div>
+        <!-- icons -->
+        <div class="flex flex-col">
+            <div class="flex gap-2 cursor-pointer justify-end">
+                <div id="search-icon" class="bg-Tint1 p-2 rounded max-sm:hidden">
+                        <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                          </svg>            
+                </div>
+                <div class="flex gap-2 ">
+                        <div id="cart" class="bg-Tint1 p-2 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                              </svg>
+                              
+                        </div>
+                        <div id="user" class="flex bg-Tint1 p-2 rounded hover:bg-Primary ">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12.75C8.83 12.75 6.25 10.17 6.25 7C6.25 3.83 8.83 1.25 12 1.25C15.17 1.25 17.75 3.83 17.75 7C17.75 10.17 15.17 12.75 12 12.75ZM12 2.75C9.66 2.75 7.75 4.66 7.75 7C7.75 9.34 9.66 11.25 12 11.25C14.34 11.25 16.25 9.34 16.25 7C16.25 4.66 14.34 2.75 12 2.75Z" fill="#417F56"/>
+                                <path d="M20.5901 22.75C20.1801 22.75 19.8401 22.41 19.8401 22C19.8401 18.55 16.3202 15.75 12.0002 15.75C7.68015 15.75 4.16016 18.55 4.16016 22C4.16016 22.41 3.82016 22.75 3.41016 22.75C3.00016 22.75 2.66016 22.41 2.66016 22C2.66016 17.73 6.85015 14.25 12.0002 14.25C17.1502 14.25 21.3401 17.73 21.3401 22C21.3401 22.41 21.0001 22.75 20.5901 22.75Z" fill="#417F56"/>
+                                </svg>
+                            <svg class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg> 
+                                                         
+                          
+                        </div> 
+                        
+                </div>
+                       
+            </div>
+            <!-- <div id="menulist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 mt-22 opacity-">
+                <ul class="flex flex-col gap-2 font-normal text-sm ">
+                    <li><a  href="./menu.html" id="main">غذای اصلی</a></li>
+                    <hr class="w-32 text-Gray3">
+                    <li><a id="starter">پیش غذا</a></li>
+                    <hr class="w-32 text-Gray3">
+                    <li><a id="desert">دسر</a></li>
+                    <hr class="w-32 text-Gray3">
+                    <li><a id="drink">نوشیدنی</a></li>
+                    
+                </ul>
+            </div> -->
+        </div>
+  
+      
+    </header>
+
+     <!-- footer -->
+     <div class="w-full max-sm:w-90 h-96 max-sm:h-38 text-white mr-28 ml-28  bg-cover bg-center relative mt-14 cursor-pointer"style = "background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)); "  >
+        <img src="/assets/images/footer/footer-image.jpg" alt="" class="w-full h-96 object-cover absolute  mix-blend-overlay ">
+        <div class="flex justify-center items-center gap-32 ml-28 mr-28 mt-8 ">
+            <div class="flex justify-center items-center gap-32 max-sm:gap-20 max-sm:m-24 max-sm:w-72 max-sm:h-28">
+                <!-- contact -->
+                <div class="flex flex-col w-48 h-48 ">
+                    <div  class=" font-bold text-xl mb-4 max-sm:text-xs max-sm:font-normal">
+                        <p >دسترسی آسان</p>
+                    </div>
+                    <div class="flex flex-col  leading-8 max-sm:text-xs max-sm:leading-5 ">
+                        <a href="#">پرسش‌های متداول</a>
+                        <a href="#">قوانین ترخینه</a>
+                        <a href="#">حریم خصوصی</a>
+                        <div class="flex gap-4 mt-4">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- شعبه‌های ترخینه -->
+                <div class="flex flex-col w-48 h-48  ">
+                <div  class=" font-bold text-xl mb-4 max-sm:text-xs max-sm:font-normal">
+                    <p>شعبه‌های ترخینه</p>
+                </div>
+                    <!-- Branch -->
+                <div class="flex flex-col leading-8 max-sm:text-xs max-sm:leading-5">
+                    <a href="/public/build/ekbatan.html">شعبه اکباتان </a>
+                    <a href="#"> شعبه چالوس</a>
+                    <a href="#">شعبه اقدسیه</a>
+                    <a href="#">شعبه ونک</a>
+                       
+                </div>
+                </div>
+                </div>
+
+            <!-- پیام به ترخینه  -->
+             <div class="flex flex-col gap-4 ml-28 mt-8 max-sm:hidden ">
+            <div class="text-xl font-bold text-white mt-8" style="width: 600px; height: 28px;">پیام به ترخینه </div>
+            <div class="flex gap-6" style="width: 578px; height: 163px;">
+                <form class="" style="width: 275px; height: 144px;">
+                    <div class="flex justify-center w-69 h-10 border border-Gray7">
+                        <input type="text"  placeholder="نام و نام خانوادگی">
+                    </div>
+                    <div class="flex justify-center w-69 h-10 border border-Gray7">
+                        <input type="number"  placeholder=" شماره تماس  ">
+                    </div>
+                    <div class="flex justify-center w-69 h-10 border border-Gray7">
+                        <input type="email"  placeholder="آدرس ایمیل (اختیاری)">
+                    </div>
+                
+                </form>
+                <form class="text-sm font-normal text-white" style="width: 286px; height: 144px;">
+                    <textarea id="subject" name="subject" placeholder="پیام شما" style="width: 254px; height: 144px;" ></textarea>
+                
+                </form>
+            </div>
+            <div class="flex justify-end  ">
+                <button class="border border-Gray7 w-44 h-10 ml-12">ارسال پیام</button> 
+            </div>
+            
+            </div>
+          
+  
+
+
+      
+        </div>
+ 
+    </div>
+            
+
+    <script async src="/src/js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/build/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./Estedad-v5.0-Fontjo.com/">
+    <link rel="shortcut icon" href="#">
+   
+    <title>ترخینه</title>
+<body  class="relative flex flex-col justify-center items-center w-full h-full max-sm:overflow-x-hidden  max-sm:w-90 " >
+   <!-- header -->
+   <header class=" bg-white flex justify-center items-center  shadow-sm  w-full h-32 p-10 max-sm:h-16 max-sm:w-90 max-sm:gap-12 ">
+    <!-- humberger-menu -->
+    <div class="md:hidden">
+        <div class="space-y-2 w-6 h-6">
+            <div class="w-8 h-0.5 bg-Primary"></div>
+            <div class="w-8 h-0.5 bg-Primary"></div>
+            <div class="w-8 h-0.5 bg-Primary"></div>
+        </div>
+    </div>
+    <!-- logo -->
+    <div class="flex w-36 h-12 max-sm:w-24 max-sm:h-8 ">
+        <span>
+            <img src="/assets/icon/logo1.svg" alt="" >
+            
+        </span>
+        <span>
+            <img src="/assets/icon/Logo.svg" alt="">
+        </span>
+    </div>
+    <!-- menu desktop -->
+    <div class="flex justify-center items-center w-9/12 h-40 cursor-pointer font-normal text-xl  max-sm:hidden">
+        <ul class="flex flex-row justify-between items-center gap-6" >
+            <li><a href="./index.html" id="home" class="text-Primary font-bold">صفحه اصلی</a></li>
+            <li id="branch" class="flex flex-col mt-40">
+                <div class="flex justify-center items-center gap-2">
+                    <a href="./index.html" id="branch" class="hover:text-Primary hover:font-bold">شعبه</a>
+                    <svg id="brancharrow" class="w-4 h-4 mt-2 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+                <div  id="branchlist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 opacity-0">
+                    <ul class="flex flex-col gap-2 font-normal text-Gray8 text-sm ">
+                        <li><a href="./ekbatan.html" id="ekbatan" >اکباتان </a></li>
+                        <hr class="w-32 text-Gray3">
+                        <li><a id="chaloos">چالوس</a></li> 
+                        <hr class="w-32 text-Gray3">
+                        <li><a id="aghdasieh">اقدسیه</a></li>
+                        <hr class="w-32 text-Gray3">
+                        <li><a id="vanak" >ونک</a></li>
+                        
+                    </ul>
+                </div>
+            </li>
+            <li id="" class="flex flex-col mt-40">
+                <div class="flex justify-center items-center gap-2">
+                    <a id="menu" href="./menu.html" class="hover:text-Primary hover:font-bold">منو</a>
+                    <svg id="menuarrow" class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+                <div id="menulist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 opacity-0">
+                    <ul class="flex flex-col gap-2 font-normal text-sm ">
+                        <li><a  href="./menu.html" id="main">غذای اصلی</a></li>
+                        <hr class="w-32 text-Gray3">
+                        <li><a id="starter">پیش غذا</a></li>
+                        <hr class="w-32 text-Gray3">
+                        <li><a id="desert">دسر</a></li>
+                        <hr class="w-32 text-Gray3">
+                        <li><a id="drink">نوشیدنی</a></li>
+                        
+                    </ul>
+                </div>
+               
+                    
+            </li>
+            <li id="representation">اعطای نمایندگی</li>
+            <li id="about">درباره ما</li>
+            <li id="cotact-us" class="w-28 h-9 mt-2 flex gap-2">
+                <p>تماس با ما</p>
+                <svg class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+                    
+            </li>
+        </ul>
+    </div>
+  <!-- icons -->
+  <div class="flex flex-col">
+    <div class="flex gap-2 cursor-pointer justify-end">
+        <div id="search-icon" class="bg-Tint1 p-2 rounded max-sm:hidden">
+                <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                  </svg>            
+        </div>
+        <div class="flex gap-2 ">
+                <div id="cart" class="bg-Tint1 p-2 rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                      </svg>
+                      
+                </div>
+                <div id="user" class="flex bg-Tint1 p-2 rounded hover:bg-Primary ">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12.75C8.83 12.75 6.25 10.17 6.25 7C6.25 3.83 8.83 1.25 12 1.25C15.17 1.25 17.75 3.83 17.75 7C17.75 10.17 15.17 12.75 12 12.75ZM12 2.75C9.66 2.75 7.75 4.66 7.75 7C7.75 9.34 9.66 11.25 12 11.25C14.34 11.25 16.25 9.34 16.25 7C16.25 4.66 14.34 2.75 12 2.75Z" fill="#417F56"/>
+                        <path d="M20.5901 22.75C20.1801 22.75 19.8401 22.41 19.8401 22C19.8401 18.55 16.3202 15.75 12.0002 15.75C7.68015 15.75 4.16016 18.55 4.16016 22C4.16016 22.41 3.82016 22.75 3.41016 22.75C3.00016 22.75 2.66016 22.41 2.66016 22C2.66016 17.73 6.85015 14.25 12.0002 14.25C17.1502 14.25 21.3401 17.73 21.3401 22C21.3401 22.41 21.0001 22.75 20.5901 22.75Z" fill="#417F56"/>
+                        </svg>
+                    <svg class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg> 
+                                                 
+                  
+                </div> 
+                
+        </div>
+               
+    </div>
+    <!-- <div id="menulist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 mt-22 opacity-">
+        <ul class="flex flex-col gap-2 font-normal text-sm ">
+            <li><a  href="./menu.html" id="main">غذای اصلی</a></li>
+            <hr class="w-32 text-Gray3">
+            <li><a id="starter">پیش غذا</a></li>
+            <hr class="w-32 text-Gray3">
+            <li><a id="desert">دسر</a></li>
+            <hr class="w-32 text-Gray3">
+            <li><a id="drink">نوشیدنی</a></li>
+            
+        </ul>
+    </div> -->
+</div>
+
+
+  
+</header>
+    <!-- slider -->
+    <div class="w-full h-80 flex flex-col justify-between items-center " style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), linear-gradient(0deg, rgba(33, 64, 43, 0.5), rgba(33, 64, 43, 0.5)), url('/assets/images/menu/sandra-seitamaa-OFJGlG3sKik-unsplash.jpg');
+        background-blend-mode: normal, overlay, normal;">
+        <div class="flex flex-col justify-center items-center w-full h-36 gap-10 mt-28">
+            <div class="w-full h-16 flex justify-between items-center p-4 max-sm:justify-center">
+                <svg class="text-white w-8 h-8 max-sm:hidden " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <p class="text-Tint1 font-bold text-4xl text-center max-sm:text-base  ">لذت غذای سالم و گیاهی را با ترخینه تجربه کنید!</p>
+                <svg class="text-white w-8 h-8 max-sm:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+                </div>
+               
+        </div>
+         
+        
+        <div class="w-36 h-8 bg-white flex justify-center items-center gap-2 mt-8  cursor-pointer  p-4" >
+            <div class="bg-Gray7 w-3 h-3 rounded-full hover:bg-Primary"></div>
+            <div class="bg-Gray7 w-3 h-3 rounded-full  hover:bg-Primary"></div>
+            <div class="bg-Gray7 w-3 h-3 rounded-full  hover:bg-Primary"></div>
+            <div class="bg-Gray7 w-3 h-3 rounded-full  hover:bg-Primary"></div>
+            <div class="bg-Gray7 w-3 h-3 rounded-full  hover:bg-Primary"></div>
+            <div class="bg-Gray7 w-3 h-3 rounded-full  hover:bg-Primary"></div>
+            </div>
+    </div>
+    <!-- Tab -->
+    <section class="Tab">
+        <div class="w-full h-16 bg-Gray3 flex justify-start items-center max-sm:w-90 max-sm:h-10 ">
+            <ul class="w-96 h-9 flex justify-center items-center gap-8 max-sm:gap-4 font-normal text-xl text-Gray7 cursor-pointer mr-24 max-sm:m-4 max-sm:w-56 max-sm:h-8  max-sm:text-xs  ">
+                    <li><a href="/public/build/menu.html" class="text-Primary font-bold">غذای اصلی</a></li>
+                    <li>پیش غذا</li>
+                    <li>دسر</li>
+                    <li>نوشیدنی</li>
+            </ul>
+        </div>
+        <!-- Chips list -->
+        <div class="mr-32 ml-32 mt-4 flex flex-col justify-center items-center max-sm:w-80 " style="width: 1224px;">
+    
+            <div class="flex justify-center items-center mr-20 max-sm:flex-col max-sm:mr-5 max-sm:ml-5 ">
+                <div class="flex justify-center items-center gap-2 cursor-pointer max-sm:w-94 max-sm:-ml-9 max-sm:mr-10" style="width: 680px; height: 32px;">
+                    <button class="chips w-24 h-8 bg-Gray3 text-xs font-normal text-Gray8 rounded-2xl flex justify-center items-center max-sm:w-18 max-sm:h-6 " data-filter = "iranian">غذاهای ایرانی</button>
+    
+                    <button class="chips w-32 h-8 max-sm:w-22 max-sm:h-6 bg-Gray3 text-sm max-sm:text-xs  font-normal text-Gray8 rounded-2xl flex justify-center items-center" data-filter="foreign">غذاهای غیرایرانی</button>
+    
+                    <button class="chips w-16 h-8 max-sm:w-16 max-sm:h-6 bg-Gray3 text-sm max-sm:text-xs  font-normal text-Gray8 rounded-2xl flex justify-center items-center" data-filter = "pizza">پیتزاها</button>
+    
+                    <button class="chips w-24 h-8 max-sm:w-20 max-sm:h-6 bg-Gray3 text-sm max-sm:text-xs  font-normal text-Gray8 rounded-2xl flex justify-center items-center" data-filter="sandwiches">ساندویچ‌ها</button>
+    
+                    <button class="chips w-24 h-8 max-sm:w-20 max-sm:h-6 bg-Gray3 text-sm max-sm:text-xs  font-normal text-Gray8 rounded-2xl flex justify-center items-center" data-filter="bestselling">پرفروش‌ترین</button>
+    
+                    <bytton class="chips w-32 h-8 bg-Gray3 text-sm p-5 font-normal text-Gray8 rounded-2xl flex justify-center items-center" data-filter="Economic">اقتصادی‌ترین</button>
+    
+                </div>
+                <div class="bg-Gray1 w-6 h-6 flex justify-center items-center -mr-3 max-sm:hidden">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 13.78C10.3734 13.78 10.2467 13.7333 10.1467 13.6333L5.80002 9.28668C5.09335 8.58001 5.09335 7.42001 5.80002 6.71335L10.1467 2.36668C10.34 2.17335 10.66 2.17335 10.8534 2.36668C11.0467 2.56001 11.0467 2.88001 10.8534 3.07335L6.50669 7.42001C6.18669 7.74001 6.18669 8.26001 6.50669 8.58001L10.8534 12.9267C11.0467 13.12 11.0467 13.44 10.8534 13.6333C10.7534 13.7267 10.6267 13.78 10.5 13.78Z" fill="#757575"/>
+                    </svg>
+                </div>
+        <!-- search box-->
+        
+            <div id="search" class="w-96 h-10 flex justify-between items-center border border-Gray5 box-border rounded-sm  p-4  mt-2 mr-9 max-sm:mr-5  max-sm:ml-5 max-sm:w-80 max-sm:h-8 max-sm:justify-center  cursor-pointer">
+                <input id="search" class="  w-72 h-4  border border-none cursor-text font-normal text-xs text-Gray8 "  type="text" placeholder="جستجو">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+                  
+            </div>
+       
+         
+                
+            </div>
+             <!-- تکمیل خرید -->
+             <div class="flex justify-between items-center mt-12 max-sm:w-80 max-sm:justify-center max-sm:gap-32" style="width: 1222px;">
+                <div class="">
+                    <p class="text-2xl font-bold text-Gray8 max-sm:text-base" >غذاهای ایرانی</p>
+                </div>
+                <div class="">
+                    <button class="w-36 h-10 max-sm:w-28 max-sm:h-8 border border-Primary flex justify-center items-center gap-4">
+                        <svg class="max-sm:w-4 max-sm:h-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.19 17.75H7.53999C6.54999 17.75 5.59999 17.33 4.92999 16.6C4.25999 15.87 3.92 14.89 4 13.9L4.83 3.94C4.86 3.63 4.74999 3.33001 4.53999 3.10001C4.32999 2.87001 4.04 2.75 3.73 2.75H2C1.59 2.75 1.25 2.41 1.25 2C1.25 1.59 1.59 1.25 2 1.25H3.74001C4.47001 1.25 5.15999 1.56 5.64999 2.09C5.91999 2.39 6.12 2.74 6.23 3.13H18.72C19.73 3.13 20.66 3.53 21.34 4.25C22.01 4.98 22.35 5.93 22.27 6.94L21.73 14.44C21.62 16.27 20.02 17.75 18.19 17.75ZM6.28 4.62L5.5 14.02C5.45 14.6 5.64 15.15 6.03 15.58C6.42 16.01 6.95999 16.24 7.53999 16.24H18.19C19.23 16.24 20.17 15.36 20.25 14.32L20.79 6.82001C20.83 6.23001 20.64 5.67001 20.25 5.26001C19.86 4.84001 19.32 4.60999 18.73 4.60999H6.28V4.62Z" fill="#417F56"/>
+                            <path d="M16.25 22.75C15.15 22.75 14.25 21.85 14.25 20.75C14.25 19.65 15.15 18.75 16.25 18.75C17.35 18.75 18.25 19.65 18.25 20.75C18.25 21.85 17.35 22.75 16.25 22.75ZM16.25 20.25C15.97 20.25 15.75 20.47 15.75 20.75C15.75 21.03 15.97 21.25 16.25 21.25C16.53 21.25 16.75 21.03 16.75 20.75C16.75 20.47 16.53 20.25 16.25 20.25Z" fill="#417F56"/>
+                            <path d="M8.25 22.75C7.15 22.75 6.25 21.85 6.25 20.75C6.25 19.65 7.15 18.75 8.25 18.75C9.35 18.75 10.25 19.65 10.25 20.75C10.25 21.85 9.35 22.75 8.25 22.75ZM8.25 20.25C7.97 20.25 7.75 20.47 7.75 20.75C7.75 21.03 7.97 21.25 8.25 21.25C8.53 21.25 8.75 21.03 8.75 20.75C8.75 20.47 8.53 20.25 8.25 20.25Z" fill="#417F56"/>
+                            <path d="M21 8.75H9C8.59 8.75 8.25 8.41 8.25 8C8.25 7.59 8.59 7.25 9 7.25H21C21.41 7.25 21.75 7.59 21.75 8C21.75 8.41 21.41 8.75 21 8.75Z" fill="#417F56"/>
+                            </svg>
+                        <p class="font-medium text-Primary text-base max-sm:text-xs">تکمیل خرید</p>
+    
+                            
+                    </button>
+                </div>
+                
+             </div>
+    
+             <!-- cards -->
+             <!-- Iranianfoods -->
+            <div id="iranianfoods" class="product mt-5 gap-6 grid grid-cols-2 max-sm:grid-cols-1">
+                <!-- single product -->
+                <!-- <div class="flex gap-8 border border-Gray4 box-border rounded-lg bg-white max-sm:w-80" style="width: 600px; height: 158px; box-shadow: 0px 16px 6px rgba(0, 0, 0, 0.01), 0px 9px 5px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.09), 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);">
+                        <div class="">
+                            <img src="/assets/images/menu/1.jpg" alt="" class="" style="width: 169px;height: 158px;">
+                        </div>
+                        <div class="mt-2 ">
+                            <div class="w-96 h-9 flex ">
+                                <p class="text-xl font-semibold text-Gray8">کوفته برنجی</p>
+                            </div>
+                            <div class="w-96 h-16 flex gap-4">
+                                <div class="w-64 h-12">
+                                    <p class="text-sm font-normal text-Gray8">برنج سبزی کوفته لپه آرد نخودچی، گردو و زرشک و آلو پیاز</p>
+                                </div>
+                                <div class="w-24 h-16">
+                                    <div class="flex gap-2">
+                                        <del class="text-base text-Gray5">۱۸۰٬۰۰۰</del>
+                                        <p class="w-8 h-5 bg-Errorextralight text-Error text-xs text-center rounded-lg">%۳۵</p>
+                                    </div>
+                                    <div class="flex">
+                                        <p class="text-lg text-Gray8">۱۴۵۰٬۰۰۰ </p>
+                                        <p class="text-lg text-Gray8">تومان </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-96 h-10 flex gap-6">
+                                <svg width="121" height="24" viewBox="0 0 121 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5489 2.92705C11.8483 2.00574 13.1517 2.00574 13.4511 2.92705L14.9697 7.60081C15.1035 8.01284 15.4875 8.2918 15.9207 8.2918H20.835C21.8037 8.2918 22.2065 9.53141 21.4228 10.1008L17.447 12.9894C17.0966 13.244 16.9499 13.6954 17.0838 14.1074L18.6024 18.7812C18.9017 19.7025 17.8472 20.4686 17.0635 19.8992L13.0878 17.0106C12.7373 16.756 12.2627 16.756 11.9122 17.0106L7.93648 19.8992C7.15276 20.4686 6.09828 19.7025 6.39763 18.7812L7.91623 14.1074C8.0501 13.6954 7.90345 13.244 7.55296 12.9894L3.57722 10.1008C2.79351 9.53141 3.19628 8.2918 4.16501 8.2918H9.07929C9.51252 8.2918 9.89647 8.01284 10.0303 7.60081L11.5489 2.92705Z" fill="#F4B740"/>
+                                    <path d="M36.5 0L39.1942 8.2918H47.9127L40.8593 13.4164L43.5534 21.7082L36.5 16.5836L29.4466 21.7082L32.1407 13.4164L25.0873 8.2918H33.8058L36.5 0Z" fill="#F4B740"/>
+                                    <path d="M60.5 0L63.1942 8.2918H71.9127L64.8593 13.4164L67.5534 21.7082L60.5 16.5836L53.4466 21.7082L56.1407 13.4164L49.0873 8.2918H57.8058L60.5 0Z" fill="#F4B740"/>
+                                    <path d="M84.5 0L87.1942 8.2918H95.9127L88.8593 13.4164L91.5534 21.7082L84.5 16.5836L77.4466 21.7082L80.1407 13.4164L73.0873 8.2918H81.8058L84.5 0Z" fill="#F4B740"/>
+                                    <path d="M108.5 0L111.194 8.2918H119.913L112.859 13.4164L115.553 21.7082L108.5 16.5836L101.447 21.7082L104.141 13.4164L97.0873 8.2918H105.806L108.5 0Z" fill="#F4B740"/>
+                                </svg>
+                                <button class="bg-Primary w-60 h-10 rounded text-white text-sm font-medium" >افزودن به سبد خرید</button>
+            
+                            </div>
+                        </div>
+    
+                </div>     -->
+        
+            </div> 
+            
+    
+    
+            <!-- Foreignfoods -->
+            <div class="w-full h-28  flex justify-start mt-12 ">
+                <p class="text-2xl font-bold text-Gray8 mt-20">غذاهای غیر ایرانی</p>
+            </div>
+            <div id="foreignfoods" class="mt-5 gap-6 grid grid-cols-2 max-sm:grid-cols-1">
+                <!-- <div class="flex gap-8 border border-Gray4 box-border rounded-lg bg-white " style="width: 600px; height: 158px;box-shadow: 0px 16px 6px rgba(0, 0, 0, 0.01), 0px 9px 5px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.09), 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);">
+                        <div class="">
+                            <img src="/assets/images/menu/1.jpg" alt="" class="" style="width: 169px;height: 158px;">
+                        </div>
+                        <div class="mt-2 ">
+                            <div class="w-96 h-9 flex ">
+                                <p class="text-xl font-semibold text-Gray8">کوفته برنجی</p>
+                            </div>
+                            <div class="w-96 h-16 flex gap-4">
+                                <div class="w-64 h-12">
+                                    <p class="text-sm font-normal text-Gray8">برنج سبزی کوفته لپه آرد نخودچی، گردو و زرشک و آلو پیاز</p>
+                                </div>
+                                <div class="w-24 h-16">
+                                    <div class="flex gap-2">
+                                        <del class="text-base text-Gray5">۱۸۰٬۰۰۰</del>
+                                        <p class="w-8 h-5 bg-Errorextralight text-Error text-xs text-center rounded-lg">%۳۵</p>
+                                    </div>
+                                    <div class="flex">
+                                        <p class="text-lg text-Gray8">۱۴۵۰٬۰۰۰ </p>
+                                        <p class="text-lg text-Gray8">تومان </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-96 h-10 flex gap-6">
+                                <svg width="121" height="24" viewBox="0 0 121 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5489 2.92705C11.8483 2.00574 13.1517 2.00574 13.4511 2.92705L14.9697 7.60081C15.1035 8.01284 15.4875 8.2918 15.9207 8.2918H20.835C21.8037 8.2918 22.2065 9.53141 21.4228 10.1008L17.447 12.9894C17.0966 13.244 16.9499 13.6954 17.0838 14.1074L18.6024 18.7812C18.9017 19.7025 17.8472 20.4686 17.0635 19.8992L13.0878 17.0106C12.7373 16.756 12.2627 16.756 11.9122 17.0106L7.93648 19.8992C7.15276 20.4686 6.09828 19.7025 6.39763 18.7812L7.91623 14.1074C8.0501 13.6954 7.90345 13.244 7.55296 12.9894L3.57722 10.1008C2.79351 9.53141 3.19628 8.2918 4.16501 8.2918H9.07929C9.51252 8.2918 9.89647 8.01284 10.0303 7.60081L11.5489 2.92705Z" fill="#F4B740"/>
+                                    <path d="M36.5 0L39.1942 8.2918H47.9127L40.8593 13.4164L43.5534 21.7082L36.5 16.5836L29.4466 21.7082L32.1407 13.4164L25.0873 8.2918H33.8058L36.5 0Z" fill="#F4B740"/>
+                                    <path d="M60.5 0L63.1942 8.2918H71.9127L64.8593 13.4164L67.5534 21.7082L60.5 16.5836L53.4466 21.7082L56.1407 13.4164L49.0873 8.2918H57.8058L60.5 0Z" fill="#F4B740"/>
+                                    <path d="M84.5 0L87.1942 8.2918H95.9127L88.8593 13.4164L91.5534 21.7082L84.5 16.5836L77.4466 21.7082L80.1407 13.4164L73.0873 8.2918H81.8058L84.5 0Z" fill="#F4B740"/>
+                                    <path d="M108.5 0L111.194 8.2918H119.913L112.859 13.4164L115.553 21.7082L108.5 16.5836L101.447 21.7082L104.141 13.4164L97.0873 8.2918H105.806L108.5 0Z" fill="#F4B740"/>
+                                </svg>
+                                <button class="bg-Primary w-60 h-10 rounded text-white text-sm font-medium" >افزودن به سبد خرید</button>
+            
+                            </div>
+                        </div>
+    
+                </div> -->    
+        
+            </div>
+            
+            <!-- Pizza -->
+            <div class="w-full h-28 text-2xl font-bold text-Gray8 flex justify-start mt-12">پیتزاها</div>
+            <div id="Pizza" class="mt-5 gap-6 grid grid-cols-2 max-sm:grid-cols-1">
+                <!-- <div class="flex gap-8 border border-Gray4 box-border rounded-lg bg-white " style="width: 600px; height: 158px;box-shadow: 0px 16px 6px rgba(0, 0, 0, 0.01), 0px 9px 5px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.09), 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);">
+                        <div class="">
+                            <img src="/assets/images/menu/1.jpg" alt="" class="" style="width: 169px;height: 158px;">
+                        </div>
+                        <div class="mt-2 ">
+                            <div class="w-96 h-9 flex ">
+                                <p class="text-xl font-semibold text-Gray8">کوفته برنجی</p>
+                            </div>
+                            <div class="w-96 h-16 flex gap-4">
+                                <div class="w-64 h-12">
+                                    <p class="text-sm font-normal text-Gray8">برنج سبزی کوفته لپه آرد نخودچی، گردو و زرشک و آلو پیاز</p>
+                                </div>
+                                <div class="w-24 h-16">
+                                    <div class="flex gap-2">
+                                        <del class="text-base text-Gray5">۱۸۰٬۰۰۰</del>
+                                        <p class="w-8 h-5 bg-Errorextralight text-Error text-xs text-center rounded-lg">%۳۵</p>
+                                    </div>
+                                    <div class="flex">
+                                        <p class="text-lg text-Gray8">۱۴۵۰٬۰۰۰ </p>
+                                        <p class="text-lg text-Gray8">تومان </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-96 h-10 flex gap-6">
+                                <svg width="121" height="24" viewBox="0 0 121 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5489 2.92705C11.8483 2.00574 13.1517 2.00574 13.4511 2.92705L14.9697 7.60081C15.1035 8.01284 15.4875 8.2918 15.9207 8.2918H20.835C21.8037 8.2918 22.2065 9.53141 21.4228 10.1008L17.447 12.9894C17.0966 13.244 16.9499 13.6954 17.0838 14.1074L18.6024 18.7812C18.9017 19.7025 17.8472 20.4686 17.0635 19.8992L13.0878 17.0106C12.7373 16.756 12.2627 16.756 11.9122 17.0106L7.93648 19.8992C7.15276 20.4686 6.09828 19.7025 6.39763 18.7812L7.91623 14.1074C8.0501 13.6954 7.90345 13.244 7.55296 12.9894L3.57722 10.1008C2.79351 9.53141 3.19628 8.2918 4.16501 8.2918H9.07929C9.51252 8.2918 9.89647 8.01284 10.0303 7.60081L11.5489 2.92705Z" fill="#F4B740"/>
+                                    <path d="M36.5 0L39.1942 8.2918H47.9127L40.8593 13.4164L43.5534 21.7082L36.5 16.5836L29.4466 21.7082L32.1407 13.4164L25.0873 8.2918H33.8058L36.5 0Z" fill="#F4B740"/>
+                                    <path d="M60.5 0L63.1942 8.2918H71.9127L64.8593 13.4164L67.5534 21.7082L60.5 16.5836L53.4466 21.7082L56.1407 13.4164L49.0873 8.2918H57.8058L60.5 0Z" fill="#F4B740"/>
+                                    <path d="M84.5 0L87.1942 8.2918H95.9127L88.8593 13.4164L91.5534 21.7082L84.5 16.5836L77.4466 21.7082L80.1407 13.4164L73.0873 8.2918H81.8058L84.5 0Z" fill="#F4B740"/>
+                                    <path d="M108.5 0L111.194 8.2918H119.913L112.859 13.4164L115.553 21.7082L108.5 16.5836L101.447 21.7082L104.141 13.4164L97.0873 8.2918H105.806L108.5 0Z" fill="#F4B740"/>
+                                </svg>
+                                <button class="bg-Primary w-60 h-10 rounded text-white text-sm font-medium" >افزودن به سبد خرید</button>
+            
+                            </div>
+                        </div>
+    
+                </div> -->    
+        
+            </div>
+    
+            <!--Sandwiches-->
+            <div class="w-full h-28 text-2xl font-bold text-Gray8 flex justify-start mt-12">ساندویچ‌ها</div>
+            <div id="Pizza" class="mt-5 gap-6 grid grid-cols-2 max-sm:grid-cols-1">
+                <!-- <div class="flex gap-8 border border-Gray4 box-border rounded-lg bg-white " style="width: 600px; height: 158px;box-shadow: 0px 16px 6px rgba(0, 0, 0, 0.01), 0px 9px 5px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.09), 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);">
+                        <div class="">
+                            <img src="/assets/images/menu/1.jpg" alt="" class="" style="width: 169px;height: 158px;">
+                        </div>
+                        <div class="mt-2 ">
+                            <div class="w-96 h-9 flex ">
+                                <p class="text-xl font-semibold text-Gray8">کوفته برنجی</p>
+                            </div>
+                            <div class="w-96 h-16 flex gap-4">
+                                <div class="w-64 h-12">
+                                    <p class="text-sm font-normal text-Gray8">برنج سبزی کوفته لپه آرد نخودچی، گردو و زرشک و آلو پیاز</p>
+                                </div>
+                                <div class="w-24 h-16">
+                                    <div class="flex gap-2">
+                                        <del class="text-base text-Gray5">۱۸۰٬۰۰۰</del>
+                                        <p class="w-8 h-5 bg-Errorextralight text-Error text-xs text-center rounded-lg">%۳۵</p>
+                                    </div>
+                                    <div class="flex">
+                                        <p class="text-lg text-Gray8">۱۴۵۰٬۰۰۰ </p>
+                                        <p class="text-lg text-Gray8">تومان </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-96 h-10 flex gap-6">
+                                <svg width="121" height="24" viewBox="0 0 121 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5489 2.92705C11.8483 2.00574 13.1517 2.00574 13.4511 2.92705L14.9697 7.60081C15.1035 8.01284 15.4875 8.2918 15.9207 8.2918H20.835C21.8037 8.2918 22.2065 9.53141 21.4228 10.1008L17.447 12.9894C17.0966 13.244 16.9499 13.6954 17.0838 14.1074L18.6024 18.7812C18.9017 19.7025 17.8472 20.4686 17.0635 19.8992L13.0878 17.0106C12.7373 16.756 12.2627 16.756 11.9122 17.0106L7.93648 19.8992C7.15276 20.4686 6.09828 19.7025 6.39763 18.7812L7.91623 14.1074C8.0501 13.6954 7.90345 13.244 7.55296 12.9894L3.57722 10.1008C2.79351 9.53141 3.19628 8.2918 4.16501 8.2918H9.07929C9.51252 8.2918 9.89647 8.01284 10.0303 7.60081L11.5489 2.92705Z" fill="#F4B740"/>
+                                    <path d="M36.5 0L39.1942 8.2918H47.9127L40.8593 13.4164L43.5534 21.7082L36.5 16.5836L29.4466 21.7082L32.1407 13.4164L25.0873 8.2918H33.8058L36.5 0Z" fill="#F4B740"/>
+                                    <path d="M60.5 0L63.1942 8.2918H71.9127L64.8593 13.4164L67.5534 21.7082L60.5 16.5836L53.4466 21.7082L56.1407 13.4164L49.0873 8.2918H57.8058L60.5 0Z" fill="#F4B740"/>
+                                    <path d="M84.5 0L87.1942 8.2918H95.9127L88.8593 13.4164L91.5534 21.7082L84.5 16.5836L77.4466 21.7082L80.1407 13.4164L73.0873 8.2918H81.8058L84.5 0Z" fill="#F4B740"/>
+                                    <path d="M108.5 0L111.194 8.2918H119.913L112.859 13.4164L115.553 21.7082L108.5 16.5836L101.447 21.7082L104.141 13.4164L97.0873 8.2918H105.806L108.5 0Z" fill="#F4B740"/>
+                                </svg>
+                                <button class="bg-Primary w-60 h-10 rounded text-white text-sm font-medium" >افزودن به سبد خرید</button>
+            
+                            </div>
+                        </div>
+    
+                </div> -->    
+        
+            </div>
+        </div>    
+    </section>
+
+    
+
+    
+    <!-- footer -->
+    <div class="w-full max-sm:w-90 h-96 max-sm:h-38 text-white mr-28 ml-28  bg-cover bg-center relative mt-14 cursor-pointer "style = "background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)); "  >
+        <img src="/assets/images/footer/footer-image.jpg" alt="" class="w-full h-96 object-cover absolute  mix-blend-overlay ">
+        <div class="flex justify-center items-center gap-32 ml-28 mr-28 mt-8 ">
+            <div class="flex justify-center items-center gap-32 max-sm:gap-20 max-sm:m-24 max-sm:w-72 max-sm:h-28">
+                <!-- contact -->
+                <div class="flex flex-col w-48 h-48 ">
+                    <div  class=" font-bold text-xl mb-4 max-sm:text-xs max-sm:font-normal">
+                        <p >دسترسی آسان</p>
+                    </div>
+                    <div class="flex flex-col  leading-8 max-sm:text-xs max-sm:leading-5 ">
+                        <a href="#">پرسش‌های متداول</a>
+                        <a href="#">قوانین ترخینه</a>
+                        <a href="#">حریم خصوصی</a>
+                        <div class="flex gap-4 mt-4">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- شعبه‌های ترخینه -->
+                <div class="flex flex-col w-48 h-48  ">
+                <div  class=" font-bold text-xl mb-4 max-sm:text-xs max-sm:font-normal">
+                    <p>شعبه‌های ترخینه</p>
+                </div>
+                    <!-- Branch -->
+                <div class="flex flex-col leading-8 max-sm:text-xs max-sm:leading-5">
+                    <a href="/public/build/ekbatan.html">شعبه اکباتان </a>
+                    <a href="#"> شعبه چالوس</a>
+                    <a href="#">شعبه اقدسیه</a>
+                    <a href="#">شعبه ونک</a>
+                       
+                </div>
+                </div>
+                </div>
+
+            <!-- پیام به ترخینه  -->
+             <div class="flex flex-col gap-4 ml-28 mt-8 max-sm:hidden ">
+            <div class="text-xl font-bold text-white mt-8" style="width: 600px; height: 28px;">پیام به ترخینه </div>
+            <div class="flex gap-6" style="width: 578px; height: 163px;">
+                <form class="" style="width: 275px; height: 144px;">
+                    <div class="flex justify-center w-69 h-10 border border-Gray7">
+                        <input type="text"  placeholder="نام و نام خانوادگی">
+                    </div>
+                    <div class="flex justify-center w-69 h-10 border border-Gray7">
+                        <input type="number"  placeholder=" شماره تماس  ">
+                    </div>
+                    <div class="flex justify-center w-69 h-10 border border-Gray7">
+                        <input type="email"  placeholder="آدرس ایمیل (اختیاری)">
+                    </div>
+                
+                </form>
+                <form class="text-sm font-normal text-white" style="width: 286px; height: 144px;">
+                    <textarea id="subject" name="subject" placeholder="پیام شما" style="width: 254px; height: 144px;" ></textarea>
+                
+                </form>
+            </div>
+            <div class="flex justify-end  ">
+                <button class="border border-Gray7 w-44 h-10 ml-12">ارسال پیام</button> 
+            </div>
+            
+            </div>
+          
+  
+
+
+      
+        </div>
+ 
+    </div>
+            
+
+    
+    <script src="/src/js/menu.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/src/js/main.js"></script>
+    
+    
+</body>
+</html>
