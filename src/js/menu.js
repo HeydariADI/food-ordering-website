@@ -11,7 +11,7 @@ const filters = {
 document.addEventListener("DOMContentLoaded", () => {
 
   axios
-    .get(" http://localhost:3000/iraninFoods")
+    .get("http://localhost:3000/iraninFoods")
     .then((res) => {
       allProductsData = res.data;
       renderProducts(res.data, filters);
@@ -31,9 +31,9 @@ function renderProducts(products, _filters) {
     const productDiv = document.createElement("div");
     productDiv.classList.add("product");
     productDiv.innerHTML =`
-    <div class="flex gap-8 border border-Gray4 box-border rounded-lg bg-white  max-sm:w-80" style="width: 600px; height: 158px;box-shadow: 0px 16px 6px rgba(0, 0, 0, 0.01), 0px 9px 5px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.09), 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);">
+    <div class="w-[37.5rem] h-[9.875 rem] flex gap-8 border border-Gray4 box-border rounded-lg bg-white  max-sm:w-80 max-sm:h-25" style="box-shadow: 0px 16px 6px rgba(0, 0, 0, 0.01), 0px 9px 5px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.09), 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);">
                     <div class="">
-                        <img src="${item.imageUrl}" alt="food-image" class="w-42 h-40 max-sm:w-23 max-sm:h-25" >
+                        <img src="${item.imageUrl}" alt="" class="w-42 h-40 max-sm:w-23 max-sm:h-25" >
                     </div>
                     <div class="mt-2 ">
                         <div class="w-96 h-9 flex ">
@@ -41,15 +41,15 @@ function renderProducts(products, _filters) {
                         </div>
                         <div class="w-96 h-16 flex gap-4">
                             <div class="w-64 h-12">
-                                <p class="text-sm font-normal max-sm:text-xs max-sm:font-normal text-Gray8">${item.desc}</p>
+                                <p class="text-sm font-normal max-sm:text-xs max-sm:font-normal max-sm:text-ellipsis max-sm:whitespace-nowrap text-Gray8">${item.desc}</p>
                             </div>
                             <div class="w-24 h-16">
                                 <div class="flex gap-2">
-                                    <del class="text-base text-Gray5">${item.price}</del>
+                                    <del class="text-base text-Gray5 max-sm:text-xs">${item.price}</del>
                                     <p class="w-8 h-5 bg-Errorextralight text-Error text-xs text-center rounded-lg">${item.percent}</p>
                                 </div>
                                 <div class="flex">
-                                    <p class="text-lg text-Gray8">${item.discount} </p>
+                                    <p class="text-lg text-Gray8 max-sm:text-xs">${item.discount} </p>
                                     <p class="text-lg text-Gray8">تومان </p>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@ function renderProducts(products, _filters) {
                                 <path d="M84.5 0L87.1942 8.2918H95.9127L88.8593 13.4164L91.5534 21.7082L84.5 16.5836L77.4466 21.7082L80.1407 13.4164L73.0873 8.2918H81.8058L84.5 0Z" fill="#F4B740"/>
                                 <path d="M108.5 0L111.194 8.2918H119.913L112.859 13.4164L115.553 21.7082L108.5 16.5836L101.447 21.7082L104.141 13.4164L97.0873 8.2918H105.806L108.5 0Z" fill="#F4B740"/>
                             </svg>
-                            <button class="bg-Primary w-60 h-10 max-sm:w-25 max-sm:h-8 rounded text-white text-sm font-medium" data-id=${item.id}>افزودن به سبد خرید</button>
+                            <button class="bg-Primary w-60 h-10 max-sm:w-25 max-sm:h-8 rounded text-white text-sm font-medium max-sm:text-xs" data-id=${item.id}>افزودن به سبد خرید</button>
         
                         </div>
                     </div>
