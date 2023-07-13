@@ -13,117 +13,10 @@
     <title>ترخینه</title>
 </head>
 <body class="relative flex flex-col justify-center items-center w-full h-full max-sm:overflow-x-hidden  max-sm:w-90 " >
-    <!-- header -->
-    <header class=" bg-white flex justify-center items-center  shadow-sm  w-full h-32 p-10 max-sm:h-16 max-sm:w-90 max-sm:gap-12 ">
-        <!-- humberger-menu -->
-        <div class="md:hidden">
-            <div class="space-y-2 w-6 h-6">
-                <div class="w-8 h-0.5 bg-Primary"></div>
-                <div class="w-8 h-0.5 bg-Primary"></div>
-                <div class="w-8 h-0.5 bg-Primary"></div>
-            </div>
-        </div>
-       
-        <!-- logo -->
-        <div class="flex w-36 h-12 max-sm:w-24 max-sm:h-8 ">
-            <span>
-                <img src="/assets/icon/logo1.svg" alt="" >
-                
-            </span>
-            <span>
-                <img src="/assets/icon/Logo.svg" alt="">
-            </span>
-        </div>
-        <!-- menu desktop -->
-        <div class="flex justify-center items-center w-9/12 h-40 cursor-pointer font-normal text-xl  max-sm:hidden">
-            <ul class="flex flex-row justify-between items-center gap-6" >
-                <li><a href="./index.html" id="home" class="text-Primary font-bold">صفحه اصلی</a></li>
-                <li id="branch" class="flex flex-col mt-40">
-                    <div class="flex justify-center items-center gap-2">
-                        <a href="./index.html" id="branch" class="hover:text-Primary hover:font-bold">شعبه</a>
-                        <svg id="brancharrow" class="w-4 h-4 mt-2 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </div>
-                    <div  id="branchlist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 opacity-0">
-                        <ul class="flex flex-col gap-2 font-normal text-Gray8 text-sm ">
-                            <li><a href="./ekbatan.html" id="ekbatan" >اکباتان </a></li>
-                            <hr class="w-32 text-Gray3">
-                            <li><a id="chaloos">چالوس</a></li> 
-                            <hr class="w-32 text-Gray3">
-                            <li><a id="aghdasieh">اقدسیه</a></li>
-                            <hr class="w-32 text-Gray3">
-                            <li><a id="vanak" >ونک</a></li>
-                            
-                        </ul>
-                    </div>
-                </li>
-                <li id="" class="flex flex-col mt-40">
-                    <div class="flex justify-center items-center gap-2">
-                        <a id="menu" href="./menu.html" class="hover:text-Primary hover:font-bold">منو</a>
-                        <svg id="menuarrow" class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </div>
-                    <div id="menulist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 opacity-0">
-                        <ul class="flex flex-col gap-2 font-normal text-sm ">
-                            <li><a  href="./menu.html" id="main">غذای اصلی</a></li>
-                            <hr class="w-32 text-Gray3">
-                            <li><a id="starter">پیش غذا</a></li>
-                            <hr class="w-32 text-Gray3">
-                            <li><a id="desert">دسر</a></li>
-                            <hr class="w-32 text-Gray3">
-                            <li><a id="drink">نوشیدنی</a></li>
-                            
-                        </ul>
-                    </div>
-                   
-                   
-                </li>
-                <li id="representation"><a href=""> اعطای نمایندگی </a></li>
-                <li  id="about"> <a href="/public/build/about.html">درباره ما</a> </li>
-                <li id="cotact-us" class="w-28 h-9 mt-2 flex gap-2">
-                    <a href="/public/build/contact.html">تماس با ما</a>
-                    <svg class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                    </svg>
-                        
-                </li>
-            </ul>
-        </div>
-        <!-- icons -->
-        <div class="flex flex-col">
-            <div class="flex gap-2 cursor-pointer justify-end">
-                <div id="search-icon" class="bg-Tint1 p-2 rounded max-sm:hidden">
-                        <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                          </svg>            
-                </div>
-                <div class="flex gap-2 ">
-                        <div id="cart" class="bg-Tint1 p-2 rounded">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                              </svg>
-                              
-                        </div>
-                        <div id="user" class="flex bg-Tint1 p-2 rounded hover:bg-Primary ">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 12.75C8.83 12.75 6.25 10.17 6.25 7C6.25 3.83 8.83 1.25 12 1.25C15.17 1.25 17.75 3.83 17.75 7C17.75 10.17 15.17 12.75 12 12.75ZM12 2.75C9.66 2.75 7.75 4.66 7.75 7C7.75 9.34 9.66 11.25 12 11.25C14.34 11.25 16.25 9.34 16.25 7C16.25 4.66 14.34 2.75 12 2.75Z" fill="#417F56"/>
-                                <path d="M20.5901 22.75C20.1801 22.75 19.8401 22.41 19.8401 22C19.8401 18.55 16.3202 15.75 12.0002 15.75C7.68015 15.75 4.16016 18.55 4.16016 22C4.16016 22.41 3.82016 22.75 3.41016 22.75C3.00016 22.75 2.66016 22.41 2.66016 22C2.66016 17.73 6.85015 14.25 12.0002 14.25C17.1502 14.25 21.3401 17.73 21.3401 22C21.3401 22.41 21.0001 22.75 20.5901 22.75Z" fill="#417F56"/>
-                                </svg>
-                            <svg class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                            </svg> 
-                                                         
-                        </div> 
-                </div>      
-            </div>
-        </div>
-       
-    </header>
-    <!-- humberger menu -->
-    <div id="menu-mobile" class="md:hidden menu-mobile w-full h-[40rem]  bg-[url('/assets/images/menu/backmenu.jpg')]">
-        <div class=" w-64 h-[40rem]">
+   
+      <!-- humberger menu-list -->
+      <div id="menu-mobile" class="md:hidden hidden menu-mobile w-full h-[40rem]  bg-[url('/assets/images/menu/backmenu.jpg')]">
+        <div class=" w-64 h-[40rem] mt-2">
           <div class="tope-frame w-64 h-24" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url('/assets/images/ekbatan/عکس\ غذا-10.jpg'), lightgray 50% / cover no-repeat;">
             <div class="flex justify-between ">
                 <svg class="mt-8" width="63" height="30" viewBox="0 0 63 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,10 +48,10 @@
                     </g>
                     </svg>
                     
-                <svg class="mt-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="5.31348" y="7.41406" width="2" height="16" rx="1" transform="rotate(-45 5.31348 7.41406)" fill="white"/>
-                    <rect x="16.3135" y="6" width="2" height="16" rx="1" transform="rotate(45 16.3135 6)" fill="white"/>
-                    </svg>
+                    <svg id="close-menu" class="mt-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5.31348" y="7.41406" width="2" height="16" rx="1" transform="rotate(-45 5.31348 7.41406)" fill="white"/>
+                        <rect x="16.3135" y="6" width="2" height="16" rx="1" transform="rotate(45 16.3135 6)" fill="white"/>
+                        </svg>
 
                     
 
@@ -192,7 +85,7 @@
                     </svg>
             </a></li>
             <hr class="w-56 text-Gray4 mr-4 ml-4">
-            <li><a href="/public/build/index.html" class="menu flex justify-between p-2">
+            <li><a href="/public/build/menu.html" class="menu flex justify-between p-2">
                 <div class="flex justify-center gap-1">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="vuesax/outline/menu-board">
@@ -249,7 +142,7 @@
                      </svg>
              </a></li>
              <hr class="w-56 text-Gray4 mr-4 ml-4">
-             <li><a href="/public/build/index.html" class="home flex justify-between p-2">
+             <li><a href="/public/build/about.html" class="home flex justify-between p-2">
                 <div class="flex justify-center gap-1">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="vuesax/outline/profile-2user">
@@ -269,7 +162,7 @@
                
              </a></li>
              <hr class="w-56 text-Gray4 mr-4 ml-4">
-             <li><a href="/public/build/index.html" class="home flex justify-between p-2">
+             <li><a href="/public/build/contact.html" class="home flex justify-between p-2">
                 <div class="flex justify-center gap-1">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="vuesax/outline/call-calling">
@@ -294,6 +187,144 @@
         </div>
         </div>
     </div>
+    <!-- search-box -->
+     <div id="search-box" class="hidden flex justify-center bg-[url('/assets/images/menu/back.png')] " style="width: 1440px; height: 1024px; ">
+        <div class="bg-white mt-52 mr-9"  style="width: 600px;height: 253px;">
+            <div class="bg-Gray3 flex justify-center " style="width: 600px;height: 84px;">
+                <div class="h-9 mt-6 flex justify-between " style="width: 600px;">
+                    <p class="mr-64 text-lg font-semibold text-Gray7" >جستجو</p>
+                        <svg id="close-search" class="ml-6 cursor-pointer" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="3.72611" height="29.8089" rx="1.86305" transform="matrix(0.698447 -0.715662 0.698447 0.715662 8.45508 11.667)" fill="#717171"/>
+                            <rect width="3.72611" height="29.8089" rx="1.86305" transform="matrix(0.698447 0.715662 -0.698447 0.715662 28.6973 9.00049)" fill="#717171"/>
+                            </svg>
+                </div>
+            </div>
+            <div class="bg-white flex flex-col justify-center" style="width: 600px;height: 253px;" >
+                <div class="flex justify-center">
+                    <p class="text-base font-medium">لطفا متن خود را تایپ و سپس دکمه Enter را بزنید.</p>
+                </div>
+                <div class="search">
+                    <div id="search" class="w-auto h-10 flex justify-between items-center border border-Gray5 box-border rounded-sm  p-4 mt-2 mr-9  max-sm:w-80 max-sm:h-8 max-sm:justify-center cursor-pointer" style="width: 496px;">
+                        <input id="search" class="font-normal text-xs text-Gray8 w-72 h-4 border border-none cursor-text"  type="text" placeholder="جستجو">
+                        <svg id="search" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                          
+                    </div>
+                </div> 
+            </div>
+        </div>
+     </div>
+    <!-- header -->
+    <header class=" bg-white flex justify-center items-center  shadow-sm  w-full h-32 p-10 max-sm:h-16 max-sm:w-90 max-sm:gap-12 ">
+        <!-- humberger menu-icon -->
+        <div id="humberger-icon" class="md:hidden cursor-pointer">
+            <div class="space-y-2 w-6 h-6">
+                <div class="w-8 h-0.5 bg-Primary"></div>
+                <div class="w-8 h-0.5 bg-Primary"></div>
+                <div class="w-8 h-0.5 bg-Primary"></div>
+            </div>
+        </div>
+       
+        <!-- logo -->
+        <div class="flex w-36 h-12 max-sm:w-24 max-sm:h-8 ">
+            <span>
+                <img src="/assets/icon/logo1.svg" alt="" >
+                
+            </span>
+            <span>
+                <img src="/assets/icon/Logo.svg" alt="">
+            </span>
+        </div>
+        <!-- desktop menu-->
+        <nav class="flex justify-center items-center w-9/12 h-40 cursor-pointer font-normal text-xl  max-sm:hidden">
+            <ul class="flex flex-row justify-between items-center gap-6" >
+                <li><a href="./index.html" id="home" class="text-Primary font-bold">صفحه اصلی</a></li>
+                <li id="branch" class="flex flex-col mt-40">
+                    <div class="flex justify-center items-center gap-2">
+                        <a href="./index.html" id="branch" class="hover:text-Primary hover:font-bold">شعبه</a>
+                        <svg id="brancharrow" class="w-4 h-4 mt-2 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <div  id="branchlist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 opacity-0">
+                        <ul class="flex flex-col gap-2 font-normal text-Gray8 text-sm ">
+                            <li><a href="./ekbatan.html" id="ekbatan" >اکباتان </a></li>
+                            <hr class="w-32 text-Gray3">
+                            <li><a id="chaloos">چالوس</a></li> 
+                            <hr class="w-32 text-Gray3">
+                            <li><a id="aghdasieh">اقدسیه</a></li>
+                            <hr class="w-32 text-Gray3">
+                            <li><a id="vanak" >ونک</a></li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li id="" class="flex flex-col mt-40">
+                    <div class="flex justify-center items-center gap-2">
+                        <a id="menu" href="./menu.html" class="hover:text-Primary hover:font-bold">منو</a>
+                        <svg id="menuarrow" class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <div id="menulist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 opacity-0">
+                        <ul class="flex flex-col gap-2 font-normal text-sm ">
+                            <li><a  href="./menu.html" id="main">غذای اصلی</a></li>
+                            <hr class="w-32 text-Gray3">
+                            <li><a id="starter">پیش غذا</a></li>
+                            <hr class="w-32 text-Gray3">
+                            <li><a id="desert">دسر</a></li>
+                            <hr class="w-32 text-Gray3">
+                            <li><a id="drink">نوشیدنی</a></li>
+                            
+                        </ul>
+                    </div>
+                   
+                   
+                </li>
+                <li id="representation"><a href=""> اعطای نمایندگی </a></li>
+                <li  id="about"> <a href="/public/build/about.html">درباره ما</a> </li>
+                <li id="cotact-us" class="w-28 h-9 mt-2 flex gap-2">
+                    <a href="/public/build/contact.html">تماس با ما</a>
+                    <svg class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                        
+                </li>
+            </ul>
+        </nav>
+        <!-- icons -->
+        <div class="flex flex-col">
+            <div class="flex gap-2 cursor-pointer justify-end">
+                <div id="search-icon" class="bg-Tint1 p-2 rounded max-sm:hidden">
+                        <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                          </svg> 
+                                       
+                </div>
+                <div class="flex gap-2 ">
+                        <div id="cart" class="bg-Tint1 p-2 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                              </svg>
+                              
+                        </div>
+                        <div id="user" class="flex bg-Tint1 p-2 rounded hover:bg-Primary ">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12.75C8.83 12.75 6.25 10.17 6.25 7C6.25 3.83 8.83 1.25 12 1.25C15.17 1.25 17.75 3.83 17.75 7C17.75 10.17 15.17 12.75 12 12.75ZM12 2.75C9.66 2.75 7.75 4.66 7.75 7C7.75 9.34 9.66 11.25 12 11.25C14.34 11.25 16.25 9.34 16.25 7C16.25 4.66 14.34 2.75 12 2.75Z" fill="#417F56"/>
+                                <path d="M20.5901 22.75C20.1801 22.75 19.8401 22.41 19.8401 22C19.8401 18.55 16.3202 15.75 12.0002 15.75C7.68015 15.75 4.16016 18.55 4.16016 22C4.16016 22.41 3.82016 22.75 3.41016 22.75C3.00016 22.75 2.66016 22.41 2.66016 22C2.66016 17.73 6.85015 14.25 12.0002 14.25C17.1502 14.25 21.3401 17.73 21.3401 22C21.3401 22.41 21.0001 22.75 20.5901 22.75Z" fill="#417F56"/>
+                                </svg>
+                            <svg class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg> 
+                                                         
+                        </div> 
+                </div>      
+            </div>
+        </div>
+       
+    </header>
+  
     <!-- slider -->
     <div class="w-full h-80 flex flex-col justify-between items-center " style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), linear-gradient(0deg, rgba(33, 64, 43, 0.5), rgba(33, 64, 43, 0.5)), url('/assets/images/slider-1.png');
     background-blend-mode: normal, overlay, normal;">

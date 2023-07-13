@@ -1,3 +1,5 @@
+
+
 const home = document.getElementById('home');
 const branch = document.getElementById('branch');
 const ekbatan = document.getElementById('ekbatan');
@@ -9,14 +11,19 @@ const desert = document.getElementById('desert');
 const representation= document.getElementById('representation');
 const aboutUs = document.getElementById('aboutus');
 const contactUs =document.getElementById('contactus');
-const searchIcon =document.getElementById('search-icon');
-const closeSearch =document.getElementById('close');
+const searchIcon =document.getElementById("search-icon");
+const searchBox = document.getElementById('search-box');
+const closeSearch =document.getElementById('close-search');
 const cart =document.getElementById('cart');
 const user =document.getElementById('user');
 const branchList = document.getElementById("branchlist");
 const showBranchList = document.getElementById("brancharrow");
 const menuList = document.getElementById("menulist");
 const showMenuList = document.getElementById("menuarrow");
+const humbergerIcon = document.getElementById("humberger-icon");
+const menuMobile = document.getElementById("menu-mobile");
+const closeMenuMobile = document.getElementById("close-menu");
+
 
 
 showMenuList.addEventListener("mouseover", () => {
@@ -35,6 +42,33 @@ showBranchList.addEventListener("mouseover", () => {
 
 
 //search
+searchIcon.addEventListener("click",()=>{
+  searchBox.style.display= "block";
+});
+
+closeSearch.addEventListener("click",()=>{
+  searchBox.style.display= "none";
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  axios
+    .get("http://localhost:3000/iraninFoods")
+    .then((res) => {
+      allProductsData = res.data;
+      renderProducts(res.data, filters);
+    })
+    .catch((err) => console.log(err));
+});
 
 
 
+//humberger menu
+humbergerIcon.addEventListener("click",()=>{
+  menuMobile.style.display = "block";
+  
+});
+
+closeMenuMobile.addEventListener("click",()=>{
+  menuMobile.style.display = "none";
+});
