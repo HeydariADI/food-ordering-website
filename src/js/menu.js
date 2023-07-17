@@ -1,4 +1,4 @@
-// http://localhost:3000/iranianFoods
+// http://localhost:3000/iraninFoods
 const iranianFoodDOM = document.querySelector('.product');
 const searchInput = document.querySelector('#search');
 const chipsBtn = document.querySelectorAll ('.chips');
