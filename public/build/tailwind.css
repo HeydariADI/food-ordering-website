@@ -410,34 +410,6 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.container{
-  width: 100%;
-}
-@media (min-width: 640px){
-  .container{
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px){
-  .container{
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px){
-  .container{
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px){
-  .container{
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px){
-  .container{
-    max-width: 1536px;
-  }
-}
 .absolute{
   position: absolute;
 }
@@ -738,6 +710,9 @@ video {
 .w-full{
   width: 100%;
 }
+.w-5{
+  width: 1.25rem;
+}
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -749,6 +724,12 @@ video {
 }
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-rows-2{
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 .flex-row{
   flex-direction: row;
@@ -890,6 +871,10 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-Tint4{
+  --tw-bg-opacity: 1;
+  background-color: rgb(124 188 145 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\/assets\/images\/menu\/back\.png\'\)\]{
   background-image: url('/assets/images/menu/back.png');
@@ -1197,9 +1182,6 @@ video {
   }
   .max-sm\:gap-4{
     gap: 1rem;
-  }
-  .max-sm\:gap-8{
-    gap: 2rem;
   }
   .max-sm\:overflow-x-hidden{
     overflow-x: hidden;
