@@ -37,7 +37,7 @@ function renderProducts(products, _filters) {
                     </div>
                     <div class="mt-2 ">
                         <div class="w-96 h-9 flex ">
-                            <p class="text-xl max-sm:text-xs font-semibold max-sm:font-normal text-Gray8 ">${item.title} </p>
+                            <p class="food-title text-xl max-sm:text-xs font-semibold max-sm:font-normal text-Gray8 ">${item.title} </p>
                         </div>
                         <div class="w-96 h-16 flex gap-4">
                             <div class="w-64 h-12">
