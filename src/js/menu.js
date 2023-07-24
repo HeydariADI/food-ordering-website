@@ -11,7 +11,7 @@ const filters = {
 document.addEventListener("DOMContentLoaded", () => {
 
   axios
-    .get("http://localhost:3000/iraninFoods")
+    .get(" http://localhost:3000/iraninFoods")
     .then((res) => {
       allProductsData = res.data;
       renderProducts(res.data, filters);

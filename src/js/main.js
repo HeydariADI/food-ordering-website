@@ -30,6 +30,7 @@ const menuMobile = document.getElementById("menu-mobile");
 const closeMenuMobile = document.getElementById("close-menu");
 const showUserLogin = document.getElementById ('user-login');
 const userLogin = document.getElementById ('user');
+const cartIcon = document.getElementById ('cart');
 
 
 
@@ -59,6 +60,10 @@ closeSearch.addEventListener('click',()=>{
   searchBox.style.display = "none";
 })
 
+//Cart 
+cartIcon.addEventListener("click",()=>{
+  window.location.href = "cart.html";
+})
 
 
 

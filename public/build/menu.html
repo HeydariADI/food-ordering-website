@@ -11,6 +11,264 @@
    
     <title>ترخینه</title>
 <body  class="relative flex flex-col justify-center items-center w-full h-full max-sm:overflow-x-hidden  max-sm:w-90 " >
+
+     <!-- pop up/login/desctop -->
+ <div class="desctop-login max-sm:hidden">
+    <div id="sign-up" class="hidden justify-center items-center bg-[url('/assets/images/menu/back.png')]" style="width: 1440px; height: 1024px; "> 
+        <div class=" w-[24.5rem] h-[18.875rem] bg-white ">
+                <div class="flex justify-between mt-6 ">
+                    <img class="mr-[9.0625rem]" src="/assets/images/login-user/Logo.svg" alt="">
+                    <img id="close-signup" class="ml-6 cursor-pointer" src="/assets/images/login-user/Close icon.svg" alt="">
+                </div>
+                <div class="flex justify-center mt-4">
+                    <a class="cursor-pointer">ورود </a>
+                    <p class="">/</p>
+                    <a class="cursor-pointer">ثبت نام</a>
+                 </div>
+                 <div class="text-xs text-Gray7 font-normal flex justify-center mt-1">
+                    <p>با وارد کردن شماره موبایل کد تاییدی برای شما ارسال خواهد شد.</p>
+                 </div>
+                 <div class="w-[21.5rem] h-10 border border-Gray4 text-sm rounded m-4 flex justify-center ">
+                    <input class="w-72 h-4 m-3"  type="tel" placeholder="شماره همراه">
+                 </div>
+                 <button id="login" class="login w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ادامه</button>
+                 <div class="mt-1 text-xs flex justify-center">
+                    <p class=" leading-4">  ورود و عضویت در ترخینه به منزله قبول <p>
+                    <p class="text-Primary  leading-4"> قوانین و مقررات </p>
+                    <p class=" leading-4">است</p>
+                 </div>
+            
+            
+        </div>
+        
+
+    </div>
+    <div id="Verification" class="hidden justify-center items-center bg-[url('/assets/images/menu/back.png')] " style="width: 1440px; height: 1024px; ">
+        <div class=" w-[24.5rem] h-[18.875rem] bg-white ">
+                <div class="flex justify-between mt-6 ">
+                    <img class="mr-[9.0625rem]" src="/assets/images/login-user/Logo.svg" alt="">
+                    <img class="ml-6" src="/assets/images/login-user/Close icon.svg" alt="">
+                </div>
+                <div class="flex justify-center mt-4">
+                    
+                    <a class="cursor-pointer"> کد تایید</a>
+                 </div>
+                 <div class="text-xs text-Gray7 font-normal flex justify-center mt-1 leading-5">
+                    <p>کد تایید پنج‌رقمی به شماره</p>
+                    <p id="user-number">۰۹۱۶ ۲۴۳ ۵۷۳۵</p>
+                    <p>ارسال شد.</p>
+                 </div>
+                 <div class="w-[21.5rem] h-10  border-Gray4 text-sm  m-4 flex justify-between ">
+                    <input type="text" class="w-14 h-10 border rounded" >
+                    <input type="text" class="w-14 h-10 border rounded" >
+                    <input type="text" class="w-14 h-10 border rounded" >
+                    <input type="text" class="w-14 h-10 border rounded" >
+                    <input type="text" class="w-14 h-10 border rounded" >
+                 </div>
+                 <div class="text-xs flex justify-between m-6"> 
+                    <div class="flex gap-1">
+                        <img src="/assets/images/login-user/clock.svg" alt="">
+                        <p id="login-clock" class="text-Primary">۱:۵۹</p>
+                        <p class="text-Gray7 ">تا دریافت مجدد کد</p>
+                     </div>
+                     <div id="edite-number" class="text-Gray7">ویرایش شماره</div>
+                    </div>
+                 <button id="register" class="flex justify-center items-center p-4 w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ثبت کد</button>
+                
+            
+        </div>
+        
+
+    </div>
+    <div id="Invalid-code" class="hidden  justify-center items-center bg-[url('/assets/images/menu/back.png')] " style="width: 1440px; height: 1024px; ">
+        <div class=" w-[24.5rem] h-[18.875rem] bg-white ">
+                <div class="flex justify-between mt-6 ">
+                    <img class="mr-[9.0625rem]" src="/assets/images/login-user/Logo.svg" alt="">
+                    <img class="ml-6" src="/assets/images/login-user/Close icon.svg" alt="">
+                </div>
+                <div class="flex justify-center mt-4">
+                    
+                    <a class="cursor-pointer"> کد تایید</a>
+                 </div>
+                 <div class="text-xs text-Gray7 font-normal flex justify-center mt-1 leading-5">
+                    <p>کد تایید پنج‌رقمی به شماره</p>
+                    <p id="user-number">۰۹۱۶ ۲۴۳ ۵۷۳۵</p>
+                    <p>ارسال شد.</p>
+                 </div>
+                 <div class="w-[21.5rem] h-10  text-sm  m-4 flex justify-between items-center ">
+                    <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+                    <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+                    <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+                    <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+                    <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+                 </div>
+                 <div class="text-xs flex justify-between m-6"> 
+                    <div class="flex gap-1">
+                        <img src="/assets/images/login-user/clock.svg" alt="">
+                        <p id="login-clock" class="text-Primary">۱:۵۹</p>
+                        <p class="text-Gray7 ">تا دریافت مجدد کد</p>
+                     </div>
+                     <div id="edite-number" class="text-Gray7">ویرایش شماره</div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <button class="flex justify-center items-center p-4 w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ثبت کد</button>
+                        <div class="flex flex-col -mt-9 justify-center items-center border border-Error w-32 h-10 bg-Errorextralight">
+                            <p class="text-sm text-Error flex justify-center">کد تایید نامعتبر!</p>
+                            <div class="w-28 h-1 bg-Gray4">
+                                <div class="w-24 h-1 bg-Error"></div>
+        
+                            </div>
+                        </div>
+                    </div>
+            
+            
+        </div>
+        
+
+    </div> 
+ </div>
+
+<!-- pop up/login/mobile -->
+<div class="mobile-login md:hidden">
+    <div id="signup-mobile" class="hidden sign-up w-full h-full bg-white  flex-col justify-center items-center ">
+        <div class="close-login mr-80 ml-6 mt-6 ">
+            <img class="" src="/assets/images/login-user/Close icon.svg" alt="">
+        </div>
+        <div class="logo-login w-36 h-1 mt-40">
+            <img class="" src="/assets/images/login-user/mobile/Vector.svg" alt="">
+        </div>
+        <div class="flex justify-center mt-20 text-base font-bold">
+            <a class="cursor-pointer">ورود </a>
+            <p class="">/</p>
+            <a class="cursor-pointer">ثبت نام</a>
+         </div>
+         <div class="text-xs text-Gray7 font-normal flex justify-center mt-6">
+            <p>شماره همراه خود را وارد کنید. </p>
+         </div>
+         <div class="w-[21.5rem] h-10 border border-Gray4 text-sm rounded m-6 flex justify-center ">
+            <input class="w-72 h-4 m-3"  type="tel" placeholder="شماره همراه">
+         </div>
+         <button id="login-mobile" class="w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-6">ورود</button>
+         <div class=" text-xs flex justify-center mt-10">
+            <p class=" leading-4">  ورود و عضویت در ترخینه به منزله قبول <p>
+            <p class="text-Primary  leading-4"> قوانین و مقررات </p>
+            <p class=" leading-4">است</p>
+         </div>
+
+</div>
+<div id="Verification-mobile" class=" w-full h-full bg-white hidden flex-col justify-center items-center ">
+        <div class="close-login mr-80 ml-6 mt-6 cursor-pointer ">
+            <img class="" src="/assets/images/login-user/Close icon.svg" alt="">
+        </div>
+        <div class="logo-login w-36 h-1 mt-40 ">
+            <img class="" src="/assets/images/login-user/mobile/Vector.svg" alt="">
+        </div>
+        <div class="flex justify-center mt-28 ">
+            <a class="cursor-default text-base font-bold">کد تائید </a>
+         </div>
+         <div class="text-xs text-Gray7 font-normal flex justify-center mt-6 leading-5 cursor-default">
+            <p>کد تایید پنج‌رقمی به شماره</p>
+            <p id="user-number">۰۹۱۶ ۲۴۳ ۵۷۳۵</p>
+            <p>ارسال شد.</p>
+         </div>
+         <div class="w-[21.5rem] h-10  border-Gray4 text-sm  m-4 flex justify-between ">
+            <input type="text" class="w-14 h-10 border rounded" >
+            <input type="text" class="w-14 h-10 border rounded" >
+            <input type="text" class="w-14 h-10 border rounded" >
+            <input type="text" class="w-14 h-10 border rounded" >
+            <input type="text" class="w-14 h-10 border rounded" placeholder="|" >
+         </div>
+         <div class="text-xs flex justify-between items-center m-6 gap-20"> 
+            <div class="flex  gap-1">
+                <img src="/assets/images/login-user/clock.svg" alt="">
+                <p id="login-clock" class="text-Primary">۱:۵۹</p>
+                <p class="text-Gray7 ">تا دریافت مجدد کد</p>
+             </div>
+             <p id="edite-number" class="text-Gray7 cursor-pointer">ویرایش شماره</p>
+        </div>
+         <button id="register-mobile" class="flex justify-center items-center p-4 w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4 cursor-pointer">ثبت کد</button>
+
+</div>
+<div id="Invalid-code" class=" w-full h-full bg-white hidden  flex-col justify-center items-center ">
+        <div class="close-login mr-80 ml-6 mt-6 cursor-pointer">
+            <img class="" src="/assets/images/login-user/Close icon.svg" alt="">
+        </div>
+        <div class="logo-login w-36 h-1 mt-40 ">
+            <img class="" src="/assets/images/login-user/mobile/Vector.svg" alt="">
+        </div>
+        <div class="flex justify-center mt-28">
+            <a class="cursor-default text-base font-bold">کد تائید </a>
+            
+         </div>
+         <div class="text-xs text-Gray7 font-normal flex justify-center mt-6 leading-5">
+            <p>کد تایید پنج‌رقمی به شماره</p>
+            <p id="user-number">۰۹۱۶ ۲۴۳ ۵۷۳۵</p>
+            <p>ارسال شد.</p>
+         </div>
+         <div class="w-[21.5rem] h-10  text-sm  m-4 flex justify-between items-center ">
+            <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+            <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+            <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+            <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+            <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+         </div>
+         <div class="text-xs flex justify-between m-6 gap-20"> 
+            <div class="flex gap-1">
+                <img src="/assets/images/login-user/clock.svg" alt="">
+                <p id="login-clock" class="text-Primary">۱:۵۹</p>
+                <p class="text-Gray7 ">تا دریافت مجدد کد</p>
+            </div>
+             <div id="edite-number" class="text-Gray7">ویرایش شماره</div>
+         </div>
+            <div class="flex flex-col justify-center items-center">
+                <button class="flex justify-center items-center p-4 w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ثبت کد</button>
+                <div class="flex flex-col mt-2 justify-center items-center border border-Error w-32 h-10 bg-Errorextralight">
+                    <p class="text-sm text-Error flex justify-center">کد تایید نامعتبر!</p>
+                    <div class="w-28 h-1 bg-Gray4">
+                        <div class="w-24 h-1 bg-Error"></div>
+
+                    </div>
+                </div>
+            </div>
+
+</div>
+<div id="code-again" class=" w-full h-full bg-white hidden flex-col justify-center items-center ">
+        <div class="close-login mr-80 ml-6 mt-6 cursor-pointer">
+            <img class="" src="/assets/images/login-user/Close icon.svg" alt="">
+        </div>
+        <div class="logo-login w-36 h-1 mt-40 ">
+            <img class="" src="/assets/images/login-user/mobile/Vector.svg" alt="">
+        </div>
+        <div class="flex justify-center mt-28">
+            <a class="cursor-default text-base font-bold">کد تائید </a>
+            
+         </div>
+         <div class="text-xs text-Gray7 font-normal flex justify-center mt-6 leading-5">
+            <p>کد تایید پنج‌رقمی به شماره</p>
+            <p id="user-number">۰۹۱۶ ۲۴۳ ۵۷۳۵</p>
+            <p>ارسال شد.</p>
+         </div>
+         <div class="w-[21.5rem] h-10  text-sm  m-4 flex justify-between items-center ">
+            <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+            <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+            <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+            <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+            <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+         </div>
+         <div class="text-xs flex justify-between m-6 gap-32"> 
+            <div class="flex gap-1">
+               
+                <p class="text-Primary cursor-pointer ">دریافت مجدد کد </p>
+            </div>
+             <div id="edite-number" class="text-Gray7 cursor-pointer">ویرایش شماره</div>
+         </div>
+            <div class="flex flex-col justify-center items-center">
+                <button class="flex justify-center items-center p-4 w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ثبت کد</button>
+               
+            </div>
+
+</div>
+</div>
  
       <!-- humberger menu-list -->
       <div id="menu-mobile" class="md:hidden hidden menu-mobile w-full h-[40rem]  bg-[url('/assets/images/menu/backmenu.jpg')]">
@@ -186,7 +444,7 @@
         </div>
     </div>
     <!-- search-box -->
-     <div id="search-box" class="hidden flex jقustify-center bg-[url('/assets/images/menu/back.png')] " style="width: 1440px; height: 1024px; ">
+     <div id="search-box" class="hidden justify-center bg-[url('/assets/images/menu/back.png')] " style="width: 1440px; height: 1024px; ">
         <div class="bg-white mt-52 mr-96"  style="width: 600px;height: 253px;">
             <div class="bg-Gray3 flex justify-center " style="width: 600px;height: 84px;">
                 <div class="h-9 mt-6 flex justify-between " style="width: 600px;">
@@ -214,116 +472,116 @@
         </div>
      </div>
     
-    <!-- header -->
-    <header class=" bg-white flex justify-center items-center  shadow-sm  w-full h-32 p-10 max-sm:h-16 max-sm:w-90 max-sm:gap-12 ">
-        <!-- humberger menu-icon -->
-        <div id="humberger-icon" class="md:hidden cursor-pointer">
-            <div class="space-y-2 w-6 h-6">
-                <div class="w-8 h-0.5 bg-Primary"></div>
-                <div class="w-8 h-0.5 bg-Primary"></div>
-                <div class="w-8 h-0.5 bg-Primary"></div>
-            </div>
+  <!-- header -->
+  <header class=" bg-white flex justify-center items-center  shadow-sm  w-full h-32 p-10 max-sm:h-16 max-sm:w-90 max-sm:gap-12 ">
+    <!-- humberger menu-icon -->
+    <div id="humberger-icon" class="md:hidden cursor-pointer">
+        <div class="space-y-2 w-6 h-6">
+            <div class="w-8 h-0.5 bg-Primary"></div>
+            <div class="w-8 h-0.5 bg-Primary"></div>
+            <div class="w-8 h-0.5 bg-Primary"></div>
         </div>
-        <!-- logo -->
-        <div class="flex w-36 h-12 max-sm:w-24 max-sm:h-8 ">
-            <span>
-                <img src="/assets/icon/logo1.svg" alt="" >
-                
-            </span>
-            <span>
-                <img src="/assets/icon/Logo.svg" alt="">
-            </span>
-        </div>
-        <!-- desktop menu-->
-        <nav class="flex justify-center items-center w-9/12 h-40 cursor-pointer font-normal text-xl  max-sm:hidden">
-            <ul class="flex flex-row justify-between items-center gap-6" >
-                <li><a href="./index.html" id="home" class="text-Primary font-bold">صفحه اصلی</a>
-                    <hr class="bg-Primary w-25 mt-1">
-                </li>
-                <li id="branch" class="flex flex-col mt-40">
-                    <div class="flex justify-center items-center gap-2">
-                        <a href="./index.html" id="branch" class="hover:text-Primary hover:font-bold">شعبه</a>
-                        <svg id="brancharrow" class="w-4 h-4 mt-2 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </div>
-                    <div  id="branchlist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 opacity-0">
-                        <ul class="flex flex-col gap-2 font-normal text-Gray8 text-sm ">
-                            <li><a href="./ekbatan.html" id="ekbatan" >اکباتان </a></li>
-                            <hr class="w-32 text-Gray3">
-                            <li><a id="chaloos">چالوس</a></li> 
-                            <hr class="w-32 text-Gray3">
-                            <li><a id="aghdasieh">اقدسیه</a></li>
-                            <hr class="w-32 text-Gray3">
-                            <li><a id="vanak" >ونک</a></li>
-                            
-                        </ul>
-                    </div>
-                </li>
-                <li id="" class="flex flex-col mt-40">
-                    <div class="flex justify-center items-center gap-2">
-                        <a id="menu" href="./menu.html" class="hover:text-Primary hover:font-bold">منو</a>
-                        <svg id="menuarrow" class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                    </div>
-                    <div id="menulist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 opacity-0">
-                        <ul class="flex flex-col gap-2 font-normal text-sm ">
-                            <li><a  href="./menu.html" id="main">غذای اصلی</a></li>
-                            <hr class="w-32 text-Gray3">
-                            <li><a id="starter">پیش غذا</a></li>
-                            <hr class="w-32 text-Gray3">
-                            <li><a id="desert">دسر</a></li>
-                            <hr class="w-32 text-Gray3">
-                            <li><a id="drink">نوشیدنی</a></li>
-                            
-                        </ul>
-                    </div>
-                   
-                   
-                </li>
-                <li id="representation"><a href=""> اعطای نمایندگی </a></li>
-                <li  id="about"> <a href="/public/build/about.html">درباره ما</a> </li>
-                <li id="cotact-us" class="w-28 h-9 mt-2 flex gap-2">
-                    <a href="/public/build/contact.html">تماس با ما</a>
-                    <svg class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    </div>
+    <!-- logo -->
+    <div class="flex w-36 h-12 max-sm:w-24 max-sm:h-8 ">
+        <span>
+            <img src="/assets/icon/logo1.svg" alt="" >
+            
+        </span>
+        <span>
+            <img src="/assets/icon/Logo.svg" alt="">
+        </span>
+    </div>
+    <!-- desktop menu-->
+    <nav class="flex justify-center items-center w-9/12 h-40 cursor-pointer font-normal text-xl  max-sm:hidden">
+        <ul class="flex flex-row justify-between items-center gap-6" >
+            <li><a href="./index.html" id="home" class="text-Primary font-bold">صفحه اصلی</a>
+                <hr class="bg-Primary w-25 mt-1">
+            </li>
+            <li id="branch" class="flex flex-col mt-40">
+                <div class="flex justify-center items-center gap-2">
+                    <a href="./index.html" id="branch" class="hover:text-Primary hover:font-bold">شعبه</a>
+                    <svg id="brancharrow" class="w-4 h-4 mt-2 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                     </svg>
-                        
-                </li>
-            </ul>
-        </nav>
-        <!-- icons -->
-        <div class="flex flex-col">
-            <div class="flex gap-2 cursor-pointer justify-end">
-                <div id="search-icon" class="bg-Tint1 p-2 rounded max-sm:hidden">
-                        <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                          </svg> 
-                                       
                 </div>
-                <div class="flex gap-2 ">
-                        <div id="cart" class="bg-Tint1 p-2 rounded">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                              </svg>
-                              
-                        </div>
-                        <div id="user" class="flex bg-Tint1 p-2 rounded hover:bg-Primary ">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 12.75C8.83 12.75 6.25 10.17 6.25 7C6.25 3.83 8.83 1.25 12 1.25C15.17 1.25 17.75 3.83 17.75 7C17.75 10.17 15.17 12.75 12 12.75ZM12 2.75C9.66 2.75 7.75 4.66 7.75 7C7.75 9.34 9.66 11.25 12 11.25C14.34 11.25 16.25 9.34 16.25 7C16.25 4.66 14.34 2.75 12 2.75Z" fill="#417F56"/>
-                                <path d="M20.5901 22.75C20.1801 22.75 19.8401 22.41 19.8401 22C19.8401 18.55 16.3202 15.75 12.0002 15.75C7.68015 15.75 4.16016 18.55 4.16016 22C4.16016 22.41 3.82016 22.75 3.41016 22.75C3.00016 22.75 2.66016 22.41 2.66016 22C2.66016 17.73 6.85015 14.25 12.0002 14.25C17.1502 14.25 21.3401 17.73 21.3401 22C21.3401 22.41 21.0001 22.75 20.5901 22.75Z" fill="#417F56"/>
-                                </svg>
-                            <svg class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                            </svg> 
-                                                         
-                        </div> 
-                </div>      
+                <div  id="branchlist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 opacity-0">
+                    <ul class="flex flex-col gap-2 font-normal text-Gray8 text-sm ">
+                        <li><a href="./ekbatan.html" id="ekbatan" >اکباتان </a></li>
+                        <hr class="w-32 text-Gray3">
+                        <li><a id="chaloos">چالوس</a></li> 
+                        <hr class="w-32 text-Gray3">
+                        <li><a id="aghdasieh">اقدسیه</a></li>
+                        <hr class="w-32 text-Gray3">
+                        <li><a id="vanak" >ونک</a></li>
+                        
+                    </ul>
+                </div>
+            </li>
+            <li id="" class="flex flex-col mt-40">
+                <div class="flex justify-center items-center gap-2">
+                    <a id="menu" href="./menu.html" class="hover:text-Primary hover:font-bold">منو</a>
+                    <svg id="menuarrow" class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+                <div id="menulist" class="flex flex-col justify-center p-4 bg-white w-36 h-40 border border-Tint1 shadow-inner z-20 mr-12 opacity-0">
+                    <ul class="flex flex-col gap-2 font-normal text-sm ">
+                        <li><a  href="./menu.html" id="main">غذای اصلی</a></li>
+                        <hr class="w-32 text-Gray3">
+                        <li><a id="starter">پیش غذا</a></li>
+                        <hr class="w-32 text-Gray3">
+                        <li><a id="desert">دسر</a></li>
+                        <hr class="w-32 text-Gray3">
+                        <li><a id="drink">نوشیدنی</a></li>
+                        
+                    </ul>
+                </div>
+               
+               
+            </li>
+            <li id="representation"><a href=""> اعطای نمایندگی </a></li>
+            <li  id="about"> <a href="/public/build/about.html">درباره ما</a> </li>
+            <li id="cotact-us" class="w-28 h-9 mt-2 flex gap-2">
+                <a href="/public/build/contact.html">تماس با ما</a>
+                <svg class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+                    
+            </li>
+        </ul>
+    </nav>
+    <!-- icons -->
+    <div class="flex flex-col">
+        <div class="flex gap-2 cursor-pointer justify-end">
+            <div id="search-icon" class="bg-Tint1 p-2 rounded max-sm:hidden">
+                    <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg> 
+                                   
             </div>
+            <div class="flex gap-2 ">
+                    <div id="cart" class="bg-Tint1 p-2 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                          
+                    </div>
+                    <div id="user-login" class="flex bg-Tint1 p-2 rounded hover:bg-Primary ">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12.75C8.83 12.75 6.25 10.17 6.25 7C6.25 3.83 8.83 1.25 12 1.25C15.17 1.25 17.75 3.83 17.75 7C17.75 10.17 15.17 12.75 12 12.75ZM12 2.75C9.66 2.75 7.75 4.66 7.75 7C7.75 9.34 9.66 11.25 12 11.25C14.34 11.25 16.25 9.34 16.25 7C16.25 4.66 14.34 2.75 12 2.75Z" fill="#417F56"/>
+                            <path d="M20.5901 22.75C20.1801 22.75 19.8401 22.41 19.8401 22C19.8401 18.55 16.3202 15.75 12.0002 15.75C7.68015 15.75 4.16016 18.55 4.16016 22C4.16016 22.41 3.82016 22.75 3.41016 22.75C3.00016 22.75 2.66016 22.41 2.66016 22C2.66016 17.73 6.85015 14.25 12.0002 14.25C17.1502 14.25 21.3401 17.73 21.3401 22C21.3401 22.41 21.0001 22.75 20.5901 22.75Z" fill="#417F56"/>
+                            </svg>
+                        <svg class="w-4 h-4 mt-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg> 
+                                                     
+                    </div> 
+            </div>      
         </div>
-       
-    </header>
+    </div>
+   
+</header>
     <!-- slider -->
     <div class="w-full h-80 flex flex-col justify-between items-center " style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), linear-gradient(0deg, rgba(33, 64, 43, 0.5), rgba(33, 64, 43, 0.5)), url('/assets/images/menu/sandra-seitamaa-OFJGlG3sKik-unsplash.jpg');
         background-blend-mode: normal, overlay, normal;">
@@ -675,6 +933,7 @@
 
     
     <script src="/src/js/menu.js" type="module"></script>
+    <script type="module" src="/src/js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="/src/js/main.js"></script>
     

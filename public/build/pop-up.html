@@ -12,9 +12,10 @@
    
     <title>ترخینه</title>
 </head>
-<body>
-<!-- pop up/login/desctop -->
-    <div id="sign-up" class="opacity-0 flex  justify-center items-center bg-[url('/assets/images/menu/back.png')] " style="width: 1440px; height: 1024px; ">
+<body class="relative flex flex-col justify-center items-center w-full h-full max-sm:overflow-x-hidden  max-sm:w-90 ">
+    <!-- pop up/login/desctop -->
+    
+    <div id="sign-up" class="hidden justify-center items-center bg-[url('/assets/images/menu/back.png')]" style="width: 1440px; height: 1024px; ">
         <div class=" w-[24.5rem] h-[18.875rem] bg-white ">
                 <div class="flex justify-between mt-6 ">
                     <img class="mr-[9.0625rem]" src="/assets/images/login-user/Logo.svg" alt="">
@@ -31,7 +32,7 @@
                  <div class="w-[21.5rem] h-10 border border-Gray4 text-sm rounded m-4 flex justify-center ">
                     <input class="w-72 h-4 m-3"  type="tel" placeholder="شماره همراه">
                  </div>
-                 <button class="w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ادامه</button>
+                 <button id="continue" class="continue w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ادامه</button>
                  <div class="mt-1 text-xs flex justify-center">
                     <p class=" leading-4">  ورود و عضویت در ترخینه به منزله قبول <p>
                     <p class="text-Primary  leading-4"> قوانین و مقررات </p>
@@ -265,6 +266,10 @@
                 </div>
     
     </div>
+
+ 
+
+    <script type="module" src="/src/js/login.js"></script>
     
 </body>
 </html>
