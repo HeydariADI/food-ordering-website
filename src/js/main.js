@@ -31,6 +31,8 @@ const closeMenuMobile = document.getElementById("close-menu");
 const showUserLogin = document.getElementById ('user-login');
 const userLogin = document.getElementById ('user');
 const cartIcon = document.getElementById ('cart');
+const loginCart = document.getElementById ('login-cart');
+const signUp = document.getElementById('sign-up');
 
 
 
@@ -63,7 +65,13 @@ closeSearch.addEventListener('click',()=>{
 //Cart 
 cartIcon.addEventListener("click",()=>{
   window.location.href = "cart.html";
-})
+  cartIcon.style.background ='#417F56';
+});
+
+loginCart.addEventListener('click',()=>{
+  signUp.style.display = "flex";
+});
+
 
 
 
