@@ -19,7 +19,6 @@ const foodsTitle = document.querySelector ('food-title');
 const closeSearch =document.getElementById('close-search');
 const resultFoodsDOM = document.querySelector('.result');
 const notFoundDOM = document.getElementById('no-result');
-const cart =document.getElementById('cart');
 const user =document.getElementById('user');
 const branchList = document.getElementById("branchlist");
 const showBranchList = document.getElementById("brancharrow");
@@ -34,6 +33,9 @@ const cartIcon = document.getElementById ('cart');
 const loginCart = document.getElementById ('login-cart');
 const signUp = document.getElementById('sign-up');
 const desctopLogin = document.querySelector('.desctop-login');
+const addToCart = document.getElementById('add-to-cart');
+const cartPosition = document.querySelector('.cart-position');
+const Factor = document.querySelector('.factor');
 
 
 
@@ -70,7 +72,15 @@ cartIcon.addEventListener("click",()=>{
 
 loginCart.addEventListener('click',()=>{
   signUp.style.display = "flex";
+
   desctopLogin.style.transform = "translateY(100%)";
+
+});
+
+cartIcon.addEventListener('click',()=>{
+cartPosition.style.display="flex";
+Factor.style.display = "none";
+  
 
 });
 
