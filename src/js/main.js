@@ -33,7 +33,7 @@ const userLogin = document.getElementById ('user');
 const cartIcon = document.getElementById ('cart');
 const loginCart = document.getElementById ('login-cart');
 const signUp = document.getElementById('sign-up');
-
+const desctopLogin = document.querySelector('.desctop-login');
 
 
 
@@ -70,7 +70,11 @@ cartIcon.addEventListener("click",()=>{
 
 loginCart.addEventListener('click',()=>{
   signUp.style.display = "flex";
+  desctopLogin.style.transform = "translateY(100%)";
+
 });
+
+
 
 
 

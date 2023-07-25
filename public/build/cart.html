@@ -14,120 +14,121 @@
 </head>
 <body id="body" class=" relative flex flex-col justify-center items-center w-full h-full max-sm:overflow-x-hidden  max-sm:w-90 " >
  <!-- pop up/login/desctop -->
- <div class="desctop-login max-sm:hidden">
-    <div id="sign-up" class="hidden justify-center items-center bg-[url('/assets/images/menu/back.png')]" style="width: 1440px; height: 1024px; "> 
-        <div class=" w-[24.5rem] h-[18.875rem] bg-white ">
-                <div class="flex justify-between mt-6 ">
-                    <img class="mr-[9.0625rem]" src="/assets/images/login-user/Logo.svg" alt="">
-                    <img id="close-signup" class="ml-6 cursor-pointer" src="/assets/images/login-user/Close icon.svg" alt="">
+<div class="desctop-login max-sm:hidden  transition-all ease-in-out delay-[0.5ms] transform translate-y-1
+">
+   <div id="sign-up" class="hidden justify-center items-center bg-[url('/assets/images/menu/back.png')]" style="width: 1440px; height: 1024px; "> 
+       <div class=" w-[24.5rem] h-[18.875rem] bg-white ">
+               <div class="flex justify-between mt-6 ">
+                   <img class="mr-[9.0625rem]" src="/assets/images/login-user/Logo.svg" alt="">
+                   <img id="close-signup" class="ml-6 cursor-pointer" src="/assets/images/login-user/Close icon.svg" alt="">
+               </div>
+               <div class="flex justify-center mt-4">
+                   <a class="cursor-pointer">ورود </a>
+                   <p class="">/</p>
+                   <a class="cursor-pointer">ثبت نام</a>
                 </div>
-                <div class="flex justify-center mt-4">
-                    <a class="cursor-pointer">ورود </a>
-                    <p class="">/</p>
-                    <a class="cursor-pointer">ثبت نام</a>
-                 </div>
-                 <div class="text-xs text-Gray7 font-normal flex justify-center mt-1">
-                    <p>با وارد کردن شماره موبایل کد تاییدی برای شما ارسال خواهد شد.</p>
-                 </div>
-                 <div class="w-[21.5rem] h-10 border border-Gray4 text-sm rounded m-4 flex justify-center ">
-                    <input class="w-72 h-4 m-3"  type="tel" placeholder="شماره همراه">
-                 </div>
-                 <button id="login" class="login w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ادامه</button>
-                 <div class="mt-1 text-xs flex justify-center">
-                    <p class=" leading-4">  ورود و عضویت در ترخینه به منزله قبول <p>
-                    <p class="text-Primary  leading-4"> قوانین و مقررات </p>
-                    <p class=" leading-4">است</p>
-                 </div>
-            
-            
-        </div>
-        
-
-    </div>
-    <div id="Verification" class="hidden justify-center items-center bg-[url('/assets/images/menu/back.png')] " style="width: 1440px; height: 1024px; ">
-        <div class=" w-[24.5rem] h-[18.875rem] bg-white ">
-                <div class="flex justify-between mt-6 ">
-                    <img class="mr-[9.0625rem]" src="/assets/images/login-user/Logo.svg" alt="">
-                    <img class="ml-6" src="/assets/images/login-user/Close icon.svg" alt="">
+                <div class="text-xs text-Gray7 font-normal flex justify-center mt-1">
+                   <p>با وارد کردن شماره موبایل کد تاییدی برای شما ارسال خواهد شد.</p>
                 </div>
-                <div class="flex justify-center mt-4">
-                    
-                    <a class="cursor-pointer"> کد تایید</a>
-                 </div>
-                 <div class="text-xs text-Gray7 font-normal flex justify-center mt-1 leading-5">
-                    <p>کد تایید پنج‌رقمی به شماره</p>
-                    <p id="user-number">۰۹۱۶ ۲۴۳ ۵۷۳۵</p>
-                    <p>ارسال شد.</p>
-                 </div>
-                 <div class="w-[21.5rem] h-10  border-Gray4 text-sm  m-4 flex justify-between ">
-                    <input type="text" class="w-14 h-10 border rounded" >
-                    <input type="text" class="w-14 h-10 border rounded" >
-                    <input type="text" class="w-14 h-10 border rounded" >
-                    <input type="text" class="w-14 h-10 border rounded" >
-                    <input type="text" class="w-14 h-10 border rounded" >
-                 </div>
-                 <div class="text-xs flex justify-between m-6"> 
-                    <div class="flex gap-1">
-                        <img src="/assets/images/login-user/clock.svg" alt="">
-                        <p id="login-clock" class="text-Primary">۱:۵۹</p>
-                        <p class="text-Gray7 ">تا دریافت مجدد کد</p>
-                     </div>
-                     <div id="edite-number" class="text-Gray7">ویرایش شماره</div>
-                    </div>
-                 <button id="register" class="flex justify-center items-center p-4 w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ثبت کد</button>
-                
-            
-        </div>
-        
-
-    </div>
-    <div id="Invalid-code" class="hidden  justify-center items-center bg-[url('/assets/images/menu/back.png')] " style="width: 1440px; height: 1024px; ">
-        <div class=" w-[24.5rem] h-[18.875rem] bg-white ">
-                <div class="flex justify-between mt-6 ">
-                    <img class="mr-[9.0625rem]" src="/assets/images/login-user/Logo.svg" alt="">
-                    <img class="ml-6" src="/assets/images/login-user/Close icon.svg" alt="">
+                <div class="w-[21.5rem] h-10 border border-Gray4 text-sm rounded m-4 flex justify-center ">
+                   <input class="w-72 h-4 m-3"  type="tel" placeholder="شماره همراه">
                 </div>
-                <div class="flex justify-center mt-4">
-                    
-                    <a class="cursor-pointer"> کد تایید</a>
-                 </div>
-                 <div class="text-xs text-Gray7 font-normal flex justify-center mt-1 leading-5">
-                    <p>کد تایید پنج‌رقمی به شماره</p>
-                    <p id="user-number">۰۹۱۶ ۲۴۳ ۵۷۳۵</p>
-                    <p>ارسال شد.</p>
-                 </div>
-                 <div class="w-[21.5rem] h-10  text-sm  m-4 flex justify-between items-center ">
-                    <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
-                    <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
-                    <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
-                    <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
-                    <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
-                 </div>
-                 <div class="text-xs flex justify-between m-6"> 
-                    <div class="flex gap-1">
-                        <img src="/assets/images/login-user/clock.svg" alt="">
-                        <p id="login-clock" class="text-Primary">۱:۵۹</p>
-                        <p class="text-Gray7 ">تا دریافت مجدد کد</p>
-                     </div>
-                     <div id="edite-number" class="text-Gray7">ویرایش شماره</div>
-                    </div>
-                    <div class="flex flex-col justify-center items-center">
-                        <button class="flex justify-center items-center p-4 w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ثبت کد</button>
-                        <div class="flex flex-col -mt-9 justify-center items-center border border-Error w-32 h-10 bg-Errorextralight">
-                            <p class="text-sm text-Error flex justify-center">کد تایید نامعتبر!</p>
-                            <div class="w-28 h-1 bg-Gray4">
-                                <div class="w-24 h-1 bg-Error"></div>
-        
-                            </div>
-                        </div>
-                    </div>
-            
-            
-        </div>
-        
+                <button id="login" class="login w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ادامه</button>
+                <div class="mt-1 text-xs flex justify-center">
+                   <p class=" leading-4">  ورود و عضویت در ترخینه به منزله قبول <p>
+                   <p class="text-Primary  leading-4"> قوانین و مقررات </p>
+                   <p class=" leading-4">است</p>
+                </div>
+           
+           
+       </div>
+       
 
-    </div> 
- </div>
+   </div>
+   <div id="Verification" class="hidden justify-center items-center bg-[url('/assets/images/menu/back.png')] " style="width: 1440px; height: 1024px; ">
+       <div class=" w-[24.5rem] h-[18.875rem] bg-white ">
+               <div class="flex justify-between mt-6 ">
+                   <img class="mr-[9.0625rem]" src="/assets/images/login-user/Logo.svg" alt="">
+                   <img class="ml-6" src="/assets/images/login-user/Close icon.svg" alt="">
+               </div>
+               <div class="flex justify-center mt-4">
+                   
+                   <a class="cursor-pointer"> کد تایید</a>
+                </div>
+                <div class="text-xs text-Gray7 font-normal flex justify-center mt-1 leading-5">
+                   <p>کد تایید پنج‌رقمی به شماره</p>
+                   <p id="user-number">۰۹۱۶ ۲۴۳ ۵۷۳۵</p>
+                   <p>ارسال شد.</p>
+                </div>
+                <div class="w-[21.5rem] h-10  border-Gray4 text-sm  m-4 flex justify-between ">
+                   <input type="text" class="w-14 h-10 border rounded" >
+                   <input type="text" class="w-14 h-10 border rounded" >
+                   <input type="text" class="w-14 h-10 border rounded" >
+                   <input type="text" class="w-14 h-10 border rounded" >
+                   <input type="text" class="w-14 h-10 border rounded" >
+                </div>
+                <div class="text-xs flex justify-between m-6"> 
+                   <div class="flex gap-1">
+                       <img src="/assets/images/login-user/clock.svg" alt="">
+                       <p id="login-clock" class="text-Primary">۱:۵۹</p>
+                       <p class="text-Gray7 ">تا دریافت مجدد کد</p>
+                    </div>
+                    <div id="edite-number" class="text-Gray7">ویرایش شماره</div>
+                   </div>
+                <button id="register" class="flex justify-center items-center p-4 w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ثبت کد</button>
+               
+           
+       </div>
+       
+
+   </div>
+   <div id="Invalid-code" class="hidden  justify-center items-center bg-[url('/assets/images/menu/back.png')] " style="width: 1440px; height: 1024px; ">
+       <div class=" w-[24.5rem] h-[18.875rem] bg-white ">
+               <div class="flex justify-between mt-6 ">
+                   <img class="mr-[9.0625rem]" src="/assets/images/login-user/Logo.svg" alt="">
+                   <img class="ml-6" src="/assets/images/login-user/Close icon.svg" alt="">
+               </div>
+               <div class="flex justify-center mt-4">
+                   
+                   <a class="cursor-pointer"> کد تایید</a>
+                </div>
+                <div class="text-xs text-Gray7 font-normal flex justify-center mt-1 leading-5">
+                   <p>کد تایید پنج‌رقمی به شماره</p>
+                   <p id="user-number">۰۹۱۶ ۲۴۳ ۵۷۳۵</p>
+                   <p>ارسال شد.</p>
+                </div>
+                <div class="w-[21.5rem] h-10  text-sm  m-4 flex justify-between items-center ">
+                   <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+                   <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+                   <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+                   <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+                   <input placeholder="۲" type="text" class="w-14 h-10 flex justify-center  border  border-Error rounded" >
+                </div>
+                <div class="text-xs flex justify-between m-6"> 
+                   <div class="flex gap-1">
+                       <img src="/assets/images/login-user/clock.svg" alt="">
+                       <p id="login-clock" class="text-Primary">۱:۵۹</p>
+                       <p class="text-Gray7 ">تا دریافت مجدد کد</p>
+                    </div>
+                    <div id="edite-number" class="text-Gray7">ویرایش شماره</div>
+                   </div>
+                   <div class="flex flex-col justify-center items-center">
+                       <button class="flex justify-center items-center p-4 w-[21.5rem] h-10 text-base text-Gray4 border border-Gray3 bg-Gray3 m-4">ثبت کد</button>
+                       <div class="flex flex-col -mt-9 justify-center items-center border border-Error w-32 h-10 bg-Errorextralight">
+                           <p class="text-sm text-Error flex justify-center">کد تایید نامعتبر!</p>
+                           <div class="w-28 h-1 bg-Gray4">
+                               <div class="w-24 h-1 bg-Error"></div>
+       
+                           </div>
+                       </div>
+                   </div>
+           
+           
+       </div>
+       
+
+   </div> 
+</div>
 
 <!-- pop up/login/mobile -->
 <div class="mobile-login md:hidden">
@@ -710,6 +711,8 @@
 
     </div>
 </section>
+
+
     
 
 
