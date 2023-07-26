@@ -1,8 +1,8 @@
 {
-    "iraninFoods" : [
+    "products" : [
         {
             "id":1,
-            "title":"کوفته برنجی",
+            "title":"کوفته برنجی ",
             "price": "۱۳۶٬۰۰۰  ",
             "desc": "برنج سبزی کوفته لپه آرد نخودچی، گردو و زرشک و آلو پیاز",
             "percent":"۳۵%",
@@ -120,12 +120,33 @@
             "discount":"۱۳۵٬۰۰۰",
             "imageUrl": "/assets/images/menu/12.jpg",
             "class": "iranian"    
+        },
+        {
+            "id":13 ,
+            "title": " پاستا",
+            "price": "۱۰۵٬۰۰۰  " ,
+            "desc":" ",
+            "percent":"%۲۰",
+            "discount":"۱۳۵٬۰۰۰",
+            "imageUrl": "/assets/images/menu/12.jpg",
+            "class": "foreign"    
+        },
+        {
+            "id":14 ,
+            "title": "",
+            "price": "۱۰۵٬۰۰۰  " ,
+            "desc":" ",
+            "percent":"%۲۰",
+            "discount":"۱۳۵٬۰۰۰",
+            "imageUrl": "/assets/images/menu/12.jpg",
+            "class": "pizza"    
         }
        
     ]
-
+    
     
 }
+
 
 
 

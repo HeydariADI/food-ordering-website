@@ -11,12 +11,14 @@ const filters = {
 document.addEventListener("DOMContentLoaded", () => {
 
   axios
-    .get(" http://localhost:3000/iraninFoods")
+    .get(" http://localhost:3000/products")
     .then((res) => {
       allProductsData = res.data;
       renderProducts(res.data, filters);
     })
     .catch((err) => console.log(err));
+
+
 });
 
 function renderProducts(products, _filters) {
@@ -26,6 +28,7 @@ function renderProducts(products, _filters) {
   });
   iranianFoodDOM.innerHTML = "";
   console.log(filteredProducts);
+
   //render to DOM
   filteredProducts.forEach(item => {
     const productDiv = document.createElement("div");
@@ -78,9 +81,10 @@ searchInput.addEventListener('input',(e)=>{
 // filter based on groups :
 chipsBtn.forEach((btn) => {
   btn.addEventListener("click", (e) => {
+    
     const filter = e.target.dataset.filter;
-   console.log(filter);
-   filter.searchItems = filter;
+  //  console.log(filter);
+   filters.searchItems = filter;
    renderProducts(allProductsData,filters);
   });
 });
