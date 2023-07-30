@@ -1,5 +1,5 @@
-// http://localhost:3000/iraninFoods
-const iranianFoodDOM = document.querySelector('.product');
+
+const productsDOM = document.querySelector('.product');
 const searchInput = document.querySelector('#search');
 const chipsBtn = document.querySelectorAll ('.chips');
 
@@ -11,7 +11,7 @@ const filters = {
 document.addEventListener("DOMContentLoaded", () => {
 
   axios
-    .get(" http://localhost:3000/products")
+    .get("http://localhost:3000/products")
     .then((res) => {
       allProductsData = res.data;
       renderProducts(res.data, filters);
@@ -26,7 +26,7 @@ function renderProducts(products, _filters) {
     return p.title.toLowerCase().includes(_filters.searchItems.toLowerCase());
     
   });
-  iranianFoodDOM.innerHTML = "";
+  productsDOM.innerHTML = "";
   console.log(filteredProducts);
 
   //render to DOM
