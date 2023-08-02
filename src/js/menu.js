@@ -27,7 +27,7 @@ function renderProducts(products, _filters) {
     
   });
   productsDOM.innerHTML = "";
-  console.log(filteredProducts);
+  
 
   //render to DOM
   filteredProducts.forEach(item => {
@@ -67,7 +67,7 @@ function renderProducts(products, _filters) {
             </div> 
 
     `;
-    iranianFoodDOM.appendChild(productDiv);
+    productsDOM.appendChild(productDiv);
     
   });
 }

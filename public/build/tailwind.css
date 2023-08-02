@@ -416,8 +416,29 @@ video {
 .relative{
   position: relative;
 }
+.left-1\/2{
+  left: 50%;
+}
+.top-2\/4{
+  top: 50%;
+}
+.top-1{
+  top: 0.25rem;
+}
+.top-1\/2{
+  top: 50%;
+}
+.left-0{
+  left: 0px;
+}
 .z-20{
   z-index: 20;
+}
+.z-40{
+  z-index: 40;
+}
+.z-50{
+  z-index: 50;
 }
 .m-3{
   margin: 0.75rem;
@@ -427,6 +448,9 @@ video {
 }
 .m-6{
   margin: 1.5rem;
+}
+.m-8{
+  margin: 2rem;
 }
 .-ml-14{
   margin-left: -3.5rem;
@@ -445,6 +469,9 @@ video {
 }
 .-mt-9{
   margin-top: -2.25rem;
+}
+.mb-20{
+  margin-bottom: 5rem;
 }
 .mb-28{
   margin-bottom: 7rem;
@@ -580,9 +607,6 @@ video {
 }
 .h-24{
   height: 6rem;
-}
-.h-28{
-  height: 7rem;
 }
 .h-3{
   height: 0.75rem;
@@ -782,8 +806,24 @@ video {
 .w-full{
   width: 100%;
 }
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .translate-y-1{
   --tw-translate-y: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-y-5{
+  --tw-translate-y: 1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-y-1\/2{
+  --tw-translate-y: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform{
@@ -868,6 +908,9 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.overflow-hidden{
+  overflow: hidden;
 }
 .overflow-x-hidden{
   overflow-x: hidden;
@@ -961,9 +1004,17 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(65 127 86 / var(--tw-bg-opacity));
 }
+.bg-Shade1{
+  --tw-bg-opacity: 1;
+  background-color: rgb(57 111 75 / var(--tw-bg-opacity));
+}
 .bg-Shade2{
   --tw-bg-opacity: 1;
   background-color: rgb(49 95 65 / var(--tw-bg-opacity));
+}
+.bg-Shade5{
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 48 32 / var(--tw-bg-opacity));
 }
 .bg-Tint1{
   --tw-bg-opacity: 1;
@@ -1130,6 +1181,9 @@ video {
 .opacity-60{
   opacity: 0.6;
 }
+.opacity-100{
+  opacity: 1;
+}
 .mix-blend-overlay{
   mix-blend-mode: overlay;
 }
@@ -1152,11 +1206,33 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .delay-\[0\.5ms\]{
   transition-delay: 0.5ms;
 }
+.delay-1000{
+  transition-delay: 1000ms;
+}
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.before\:z-10::before{
+  content: var(--tw-content);
+  z-index: 10;
+}
+.before\:bg-\[rgba\(0\2c 0\2c 0\2c 0\.4\)\]::before{
+  content: var(--tw-content);
+  background-color: rgba(0,0,0,0.4);
+}
+.before\:content-\[\'\'\]::before{
+  --tw-content: '';
+  content: var(--tw-content);
 }
 .hover\:bg-Primary:hover{
   --tw-bg-opacity: 1;
