@@ -26,7 +26,7 @@ const menuMobile = document.getElementById("menu-mobile");
 const closeMenuMobile = document.getElementById("close-menu");
 const showUserLogin = document.getElementById ('user-login');
 const userLogin = document.getElementById ('user');
-const cartIcon = document.getElementById ('cart');
+
 const loginCart = document.getElementById ('login-cart');
 const signUp = document.getElementById('sign-up');
 const desctopLogin = document.querySelector('.desctop-login');
@@ -181,6 +181,7 @@ closeSearch.addEventListener('click',()=>{
 // });
 
 //Cart 
+const cartIcon = document.getElementById ('cart');
 const addToCart = document.querySelector('.add-to-cart');
 const cartPosition = document.querySelector('.cart-position');
 const Factor = document.querySelector('.factor');
@@ -188,14 +189,16 @@ const Factor = document.querySelector('.factor');
 cartIcon.addEventListener("click",()=>{
   window.location.href = "cart.html";
   cartIcon.style.background ='#417F56';
+  
+  
 });
 
-// addToCart.addEventListener("click",()=>{
-  
-  
-//   window.location.href = "cart.html";
+
+addToCart.addEventListener("click",()=>{
+  window.location.href = "cart.html";
+  cartPosition.style.display = "flex";
  
-// });
+});
 
 
 
